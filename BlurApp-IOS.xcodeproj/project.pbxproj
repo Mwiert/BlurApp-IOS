@@ -20,6 +20,9 @@
 		DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */; };
 		DBBC24EB295B315B00CC6A7C /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */; };
 		DBBC24ED295B316900CC6A7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24EC295B316900CC6A7C /* User.swift */; };
+		DBE84F85295E469900B1F26F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE84F84295E469900B1F26F /* LoginViewModel.swift */; };
+		DBE84F87295E46AF00B1F26F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE84F86295E46AF00B1F26F /* RegisterViewModel.swift */; };
+		DBE84F89295E46BA00B1F26F /* VerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE84F88295E46BA00B1F26F /* VerificationViewModel.swift */; };
 		DBF570EB295A933D009F2DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF570EA295A933D009F2DA8 /* AppDelegate.swift */; };
 		DBF570ED295A933D009F2DA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF570EC295A933D009F2DA8 /* SceneDelegate.swift */; };
 		DBF570F2295A933D009F2DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF570F0295A933D009F2DA8 /* Main.storyboard */; };
@@ -69,6 +72,9 @@
 		DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMapViewModel.swift; sourceTree = "<group>"; };
 		DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		DBBC24EC295B316900CC6A7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DBE84F84295E469900B1F26F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DBE84F86295E46AF00B1F26F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		DBE84F88295E46BA00B1F26F /* VerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewModel.swift; sourceTree = "<group>"; };
 		DBF570E7295A933D009F2DA8 /* BlurApp-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlurApp-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF570EA295A933D009F2DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF570EC295A933D009F2DA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -246,6 +252,9 @@
 			children = (
 				DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */,
 				DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */,
+				DBE84F84295E469900B1F26F /* LoginViewModel.swift */,
+				DBE84F86295E46AF00B1F26F /* RegisterViewModel.swift */,
+				DBE84F88295E46BA00B1F26F /* VerificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -413,9 +422,12 @@
 				DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */,
 				DBF570F5295A933D009F2DA8 /* BlurApp_IOS.xcdatamodeld in Sources */,
 				DBF5712B295A93D8009F2DA8 /* OpeningViewController.swift in Sources */,
+				DBE84F87295E46AF00B1F26F /* RegisterViewModel.swift in Sources */,
+				DBE84F85295E469900B1F26F /* LoginViewModel.swift in Sources */,
 				DBF570EB295A933D009F2DA8 /* AppDelegate.swift in Sources */,
 				DB8AC123295D279700AEB617 /* Profession.swift in Sources */,
 				DBF57129295A93D0009F2DA8 /* MainViewController.swift in Sources */,
+				DBE84F89295E46BA00B1F26F /* VerificationViewModel.swift in Sources */,
 				DBF57127295A93C8009F2DA8 /* LoginViewController.swift in Sources */,
 				DBBC24EB295B315B00CC6A7C /* TabBarViewModel.swift in Sources */,
 				DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */,
