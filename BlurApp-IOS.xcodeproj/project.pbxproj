@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11C295D236900AEB617 /* Workplace.swift */; };
+		DB8AC11F295D23C900AEB617 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11E295D23C900AEB617 /* Location.swift */; };
+		DB8AC121295D241000AEB617 /* BlurApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC120295D241000AEB617 /* BlurApiService.swift */; };
+		DB8AC123295D279700AEB617 /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC122295D279700AEB617 /* Profession.swift */; };
 		DBBC24E2295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DC295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf */; };
 		DBBC24E3295A9AD800CC6A7C /* LexendDeca-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DD295A9AD800CC6A7C /* LexendDeca-Light.ttf */; };
 		DBBC24E4295A9AD800CC6A7C /* LexendExa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DE295A9AD800CC6A7C /* LexendExa-SemiBold.ttf */; };
 		DBBC24E5295A9AD800CC6A7C /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DF295A9AD800CC6A7C /* LexendDeca-Bold.ttf */; };
 		DBBC24E6295A9AD800CC6A7C /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24E0295A9AD800CC6A7C /* LexendDeca-Regular.ttf */; };
 		DBBC24E7295A9AD800CC6A7C /* LexendDeca-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24E1295A9AD800CC6A7C /* LexendDeca-ExtraBold.ttf */; };
+		DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */; };
+		DBBC24EB295B315B00CC6A7C /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */; };
+		DBBC24ED295B316900CC6A7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24EC295B316900CC6A7C /* User.swift */; };
 		DBF570EB295A933D009F2DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF570EA295A933D009F2DA8 /* AppDelegate.swift */; };
 		DBF570ED295A933D009F2DA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF570EC295A933D009F2DA8 /* SceneDelegate.swift */; };
 		DBF570F2295A933D009F2DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF570F0295A933D009F2DA8 /* Main.storyboard */; };
@@ -49,12 +56,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB8AC11C295D236900AEB617 /* Workplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace.swift; sourceTree = "<group>"; };
+		DB8AC11E295D23C900AEB617 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DB8AC120295D241000AEB617 /* BlurApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurApiService.swift; sourceTree = "<group>"; };
+		DB8AC122295D279700AEB617 /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
 		DBBC24DC295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendExa-ExtraBold.ttf"; sourceTree = "<group>"; };
 		DBBC24DD295A9AD800CC6A7C /* LexendDeca-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Light.ttf"; sourceTree = "<group>"; };
 		DBBC24DE295A9AD800CC6A7C /* LexendExa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendExa-SemiBold.ttf"; sourceTree = "<group>"; };
 		DBBC24DF295A9AD800CC6A7C /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
 		DBBC24E0295A9AD800CC6A7C /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
 		DBBC24E1295A9AD800CC6A7C /* LexendDeca-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMapViewModel.swift; sourceTree = "<group>"; };
+		DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		DBBC24EC295B316900CC6A7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DBF570E7295A933D009F2DA8 /* BlurApp-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlurApp-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF570EA295A933D009F2DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBF570EC295A933D009F2DA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +153,8 @@
 		DBF570E9295A933D009F2DA8 /* BlurApp-IOS */ = {
 			isa = PBXGroup;
 			children = (
-				DBF57123295A9398009F2DA8 /* Controller */,
+				DBF5711E295A9371009F2DA8 /* Service */,
+				DBF57123295A9398009F2DA8 /* ViewModel */,
 				DBF57122295A9392009F2DA8 /* Model */,
 				DBF57121295A9389009F2DA8 /* View */,
 				DBF57120295A937F009F2DA8 /* Utils */,
@@ -176,16 +191,16 @@
 			isa = PBXGroup;
 			children = (
 				DBF5711F295A9378009F2DA8 /* Logs */,
-				DBF5711E295A9371009F2DA8 /* dbHelper */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		DBF5711E295A9371009F2DA8 /* dbHelper */ = {
+		DBF5711E295A9371009F2DA8 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DB8AC120295D241000AEB617 /* BlurApiService.swift */,
 			);
-			path = dbHelper;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		DBF5711F295A9378009F2DA8 /* Logs */ = {
@@ -226,16 +241,20 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		DBF57123295A9398009F2DA8 /* Controller */ = {
+		DBF57123295A9398009F2DA8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */,
+				DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */,
 			);
-			path = Controller;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DBF57133295A9408009F2DA8 /* BusinessProps */ = {
 			isa = PBXGroup;
 			children = (
+				DB8AC11C295D236900AEB617 /* Workplace.swift */,
+				DB8AC122295D279700AEB617 /* Profession.swift */,
 			);
 			path = BusinessProps;
 			sourceTree = "<group>";
@@ -243,6 +262,8 @@
 		DBF57134295A9413009F2DA8 /* UserProps */ = {
 			isa = PBXGroup;
 			children = (
+				DBBC24EC295B316900CC6A7C /* User.swift */,
+				DB8AC11E295D23C900AEB617 /* Location.swift */,
 			);
 			path = UserProps;
 			sourceTree = "<group>";
@@ -384,16 +405,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBC24ED295B316900CC6A7C /* User.swift in Sources */,
+				DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */,
+				DB8AC11F295D23C900AEB617 /* Location.swift in Sources */,
 				DBF57130295A93F6009F2DA8 /* RegisterViewController.swift in Sources */,
 				DBF57125295A93B6009F2DA8 /* LocationMapViewController.swift in Sources */,
 				DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */,
 				DBF570F5295A933D009F2DA8 /* BlurApp_IOS.xcdatamodeld in Sources */,
 				DBF5712B295A93D8009F2DA8 /* OpeningViewController.swift in Sources */,
 				DBF570EB295A933D009F2DA8 /* AppDelegate.swift in Sources */,
+				DB8AC123295D279700AEB617 /* Profession.swift in Sources */,
 				DBF57129295A93D0009F2DA8 /* MainViewController.swift in Sources */,
 				DBF57127295A93C8009F2DA8 /* LoginViewController.swift in Sources */,
+				DBBC24EB295B315B00CC6A7C /* TabBarViewModel.swift in Sources */,
+				DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */,
 				DBF5712D295A93E3009F2DA8 /* ProfileViewController.swift in Sources */,
 				DBF570ED295A933D009F2DA8 /* SceneDelegate.swift in Sources */,
+				DB8AC121295D241000AEB617 /* BlurApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
