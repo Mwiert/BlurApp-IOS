@@ -14,3 +14,6 @@ struct Workplace : Codable {
     let name : String
     let location : Location
 }
+
+
+

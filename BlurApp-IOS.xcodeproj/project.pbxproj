@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB648CED296619AA0010C54D /* DefaultStorage.swift */; };
+		DB67A49329655D7C005AD138 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49229655D7C005AD138 /* Alamofire */; };
+		DB67A49C2965A3E1005AD138 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49B2965A3E1005AD138 /* SwiftyJSON */; };
 		DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11C295D236900AEB617 /* Workplace.swift */; };
 		DB8AC11F295D23C900AEB617 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11E295D23C900AEB617 /* Location.swift */; };
 		DB8AC121295D241000AEB617 /* BlurApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC120295D241000AEB617 /* BlurApiService.swift */; };
@@ -59,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB648CED296619AA0010C54D /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
 		DB8AC11C295D236900AEB617 /* Workplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace.swift; sourceTree = "<group>"; };
 		DB8AC11E295D23C900AEB617 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		DB8AC120295D241000AEB617 /* BlurApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurApiService.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB67A49C2965A3E1005AD138 /* SwiftyJSON in Frameworks */,
+				DB67A49329655D7C005AD138 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +128,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB648CEC296619780010C54D /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				DB648CED296619AA0010C54D /* DefaultStorage.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
 		DBBC24DB295A9AD800CC6A7C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +173,7 @@
 		DBF570E9295A933D009F2DA8 /* BlurApp-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				DB648CEC296619780010C54D /* Privacy */,
 				DBF5711E295A9371009F2DA8 /* Service */,
 				DBF57123295A9398009F2DA8 /* ViewModel */,
 				DBF57122295A9392009F2DA8 /* Model */,
@@ -293,6 +308,10 @@
 			dependencies = (
 			);
 			name = "BlurApp-IOS";
+			packageProductDependencies = (
+				DB67A49229655D7C005AD138 /* Alamofire */,
+				DB67A49B2965A3E1005AD138 /* SwiftyJSON */,
+			);
 			productName = "BlurApp-IOS";
 			productReference = DBF570E7295A933D009F2DA8 /* BlurApp-IOS.app */;
 			productType = "com.apple.product-type.application";
@@ -365,6 +384,10 @@
 				Base,
 			);
 			mainGroup = DBF570DE295A933D009F2DA8;
+			packageReferences = (
+				DB67A49129655D7C005AD138 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DB67A49A2965A3E1005AD138 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = DBF570E8295A933D009F2DA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -430,6 +453,7 @@
 				DBE84F89295E46BA00B1F26F /* VerificationViewModel.swift in Sources */,
 				DBF57127295A93C8009F2DA8 /* LoginViewController.swift in Sources */,
 				DBBC24EB295B315B00CC6A7C /* TabBarViewModel.swift in Sources */,
+				DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */,
 				DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */,
 				DBF5712D295A93E3009F2DA8 /* ProfileViewController.swift in Sources */,
 				DBF570ED295A933D009F2DA8 /* SceneDelegate.swift in Sources */,
@@ -773,6 +797,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB67A49129655D7C005AD138 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DB67A49A2965A3E1005AD138 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB67A49229655D7C005AD138 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB67A49129655D7C005AD138 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DB67A49B2965A3E1005AD138 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB67A49A2965A3E1005AD138 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		DBF570F3295A933D009F2DA8 /* BlurApp_IOS.xcdatamodeld */ = {
