@@ -9,5 +9,5 @@ import Foundation
 
 struct Profession :Codable {
     let id: UUID
-    let nameOfProfession : String
+    let nameOfProfession : String?
 }

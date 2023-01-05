@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmd-JC-37H" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7029.7709923664115" y="-275.35211267605638"/>
+            <point key="canvasLocation" x="7312" y="-275"/>
         </scene>
         <!--Location Map View Controller-->
         <scene sceneID="lMc-ei-GIQ">
@@ -257,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEG-61-BvS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7922.900763358778" y="438.73239436619718"/>
+            <point key="canvasLocation" x="7311" y="456"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Muz-sZ-470">
@@ -279,7 +279,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FUR-9D-FgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6150" y="439"/>
+            <point key="canvasLocation" x="5474" y="439"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HGZ-rL-qD3">
@@ -296,7 +296,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0j-ep-FhJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7031" y="439"/>
+            <point key="canvasLocation" x="6323" y="439"/>
         </scene>
         <!--Opening View Controller-->
         <scene sceneID="uJr-gY-Own">
@@ -337,7 +337,7 @@
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="B7Z-WG-TgV" kind="show" id="H91-f2-Te1"/>
+                                            <segue destination="B7Z-WG-TgV" kind="show" id="8W4-QZ-ew1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -417,6 +417,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btnloginClicked:" destination="B7Z-WG-TgV" eventType="touchUpInside" id="MGe-HC-wKE"/>
+                                    <segue destination="n2f-jX-8T0" kind="presentation" modalPresentationStyle="fullScreen" id="lN9-UQ-2px"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="veya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuT-Dk-GSl">
@@ -468,10 +469,14 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="bxp-fz-mYR"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="WNc-8R-baK" id="qhq-6I-5hH"/>
+                        <outlet property="passwordTextField" destination="Z1D-Ta-Tb1" id="moU-oY-Ft8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9k-Cx-nQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2513.740458015267" y="-66.197183098591552"/>
+            <point key="canvasLocation" x="2514" y="-87"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="hcn-2c-g0L">
@@ -495,20 +500,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email adresinizi giriniz." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oW8-rF-oYs">
-                                <rect key="frame" x="47" y="233" width="290" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifrenizi giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4C2-sM-Amn">
-                                <rect key="frame" x="47" y="297" width="290" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-YF-m3k">
-                                <rect key="frame" x="116" y="389" width="152" height="50"/>
+                                <rect key="frame" x="120" y="479" width="152" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Kaydol" cornerStyle="large">
@@ -520,16 +513,20 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnKaydolClicked:" destination="eBQ-jR-Hs6" eventType="touchUpInside" id="rUN-KD-udt"/>
+                                    <segue destination="KOU-Aq-53k" kind="show" identifier="verifySegue" id="jiF-vL-gzu"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="veya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izv-tG-6Lx">
-                                <rect key="frame" x="171" y="478" width="42" height="53"/>
+                                <rect key="frame" x="173" y="572" width="42" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAO-a0-cNZ">
-                                <rect key="frame" x="58" y="557" width="64" height="50"/>
+                                <rect key="frame" x="60" y="651" width="64" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
@@ -541,7 +538,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMi-mT-Gd4">
-                                <rect key="frame" x="160" y="557" width="64" height="50"/>
+                                <rect key="frame" x="162" y="651" width="64" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
@@ -553,7 +550,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBm-6W-8CS">
-                                <rect key="frame" x="263" y="557" width="64" height="50"/>
+                                <rect key="frame" x="265" y="651" width="64" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
@@ -564,12 +561,42 @@
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email adresinizi giriniz." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oW8-rF-oYs">
+                                <rect key="frame" x="49" y="348" width="290" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifrenizi giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4C2-sM-Amn">
+                                <rect key="frame" x="49" y="407" width="290" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adınız." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCu-9Q-QyQ">
+                                <rect key="frame" x="50" y="226" width="290" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyadınız." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XLw-d1-jP1">
+                                <rect key="frame" x="50" y="284" width="290" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="honorifix-prefix"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P5q-kn-a0q"/>
                         <color key="backgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="KH2-Dv-G6Y"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="oW8-rF-oYs" id="9T4-ZE-Ocs"/>
+                        <outlet property="nameTextField" destination="TCu-9Q-QyQ" id="hqK-i4-PUq"/>
+                        <outlet property="passwordTextField" destination="4C2-sM-Amn" id="Nk4-lL-4Hz"/>
+                        <outlet property="surnameTextField" destination="XLw-d1-jP1" id="3iW-gr-MPO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PS-cg-adg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -674,7 +701,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9cv-mc-ynD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6150.3816793893129" y="1131.6901408450706"/>
+            <point key="canvasLocation" x="6323" y="1132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a6L-tz-or1">
@@ -693,7 +720,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZTi-Wi-31o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6150.3816793893129" y="-275.35211267605638"/>
+            <point key="canvasLocation" x="6324" y="-275"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Cd9-gJ-BF6">
@@ -906,7 +933,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dln-dz-jxb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3402.2900763358775" y="-66.197183098591552"/>
+            <point key="canvasLocation" x="3402" y="-87"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Idi-wp-Fs4">
@@ -1151,7 +1178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4V-OH-Eo0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7029.7709923664115" y="1131.6901408450706"/>
+            <point key="canvasLocation" x="7234" y="1132"/>
         </scene>
     </scenes>
     <resources>

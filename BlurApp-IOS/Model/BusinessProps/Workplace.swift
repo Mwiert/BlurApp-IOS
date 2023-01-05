@@ -10,9 +10,9 @@ import Foundation
 
 struct Workplace : Codable {
     let id : UUID
-    let professionId : String
-    let name : String
-    let location : Location
+    let professionId : String?
+    let name : String?
+    let location : Location?
 }
 
 

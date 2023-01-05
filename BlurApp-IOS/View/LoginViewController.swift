@@ -10,20 +10,18 @@ import Alamofire
 import SwiftyJSON
 
 class LoginViewController: UIViewController {
-    let serializer = DataResponseSerializer(emptyResponseCodes: Set([200, 204, 205]))
-    let url = "http://localhost:5208/api/home/createaccount/"
-    let urlLogin = "http://localhost:5208/api/home/login/"
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
-    var jsonLogin : JSON = ["email":"kayra@kayra.com","password":"123"]
+ //   let serializer = DataResponseSerializer(emptyResponseCodes: Set([200, 204, 205]))
+    //let url = "http://localhost:5208/api/home/createaccount/"
+    //let urlLogin = "http://localhost:5208/api/home/login/"
+    
+    //var jsonLogin : JSON = ["email":"kayra@kayra.com","password":"123"]
     
     
     
-    var jsonfilem : JSON = ["name":"Mertsa" ,"surname":"sahin","email":"mert23@mert.com", "password": "123"]
-
-    let headers: HTTPHeaders = [
-        "accept" : "application/json",
-        "Content-Type": "application/json"
-    ]
+    //var jsonfilem : JSON = ["name":"Mertsa" ,"surname":"sahin","email":"mert23@mert.com", "password": "123"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,21 +29,32 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view."
     }
     @IBAction func btnloginClicked(_ sender: Any) {
-
+        
         //CreateUser
-       AF.request(url, method: .post ,parameters: jsonfilem ,encoder: JSONParameterEncoder.default,headers: headers).responseDecodable(of : mainUser.self, completionHandler: { response in
-             switch response.result {
-             
-             case .success(let data):
-             print(data)
-             case .failure(let error):
-             print(error.localizedDescription)
-             }
-         })
+        if(emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty){
+            let alert = UIAlertController(title: "Hata!", message: "Lütfen boş alanları doldurunuz.", preferredStyle:UIAlertController.Style.alert)
+        self.present(alert, animated: true, completion: nil)
+            let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default)
+            alert.addAction(okButton)
+        }
+        else{
+            userLoginVM().userLoginReq(Email: emailTextField.text!, Password: passwordTextField.text!)
+                let alert = UIAlertController(title: "Başarılı!", message: "Giriş yapıldı.", preferredStyle:UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default){
+                (UIAlertAction) in
+                self.present(alert, animated: true, completion: nil)
+                self.performSegue(withIdentifier: "login2MainScreenSegue", sender: (Any).self)
+            }
+            
+            
+
+            
+        }
+
         
       // LoginUser
         
-       AF.request(urlLogin, method: .post ,parameters: jsonLogin ,encoder:JSONParameterEncoder.default,headers: headers).responseDecodable(of : userProps.self, completionHandler: { response in
+     /*  AF.request(urlLogin, method: .post ,parameters: jsonLogin ,encoder:JSONParameterEncoder.default,headers: headers).responseDecodable(of : userProps.self, completionHandler: { response in
             switch response.result {
             
             case .success(let data):
@@ -53,17 +62,6 @@ class LoginViewController: UIViewController {
             case .failure(let error):
             print(error.localizedDescription)
             }
-        })
-             
-            /*    AF.request("http://localhost:5208/api/home/login2/",method: .get, parameters: parameters,encoder: .json,headers: .default).validate(contentType: ["application/json;+charset=UTF-8"]).response { (response) in
-             switch response.result{
-             case .success(let data):
-             print(data)
-             case .failure(let error):
-             print(error.localizedDescription)
-             }
-             }
-             */
-            
+        })*/
         }
     }
