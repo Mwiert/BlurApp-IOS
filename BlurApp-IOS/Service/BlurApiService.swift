@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 public class apiService{
      let apiURL : String = "http://localhost:5208/"
@@ -26,4 +27,9 @@ enum requestPaths : String {
     case createWorkplace = "api/user/createworkplace/" // method POST
     case getallWorkplaces = "api/user/getallworkplaces/" // method GET
     case createProfession = "api/user/createprofession/" // method POST
+}
+
+struct reqUrl{
+    let loginUrl = apiService().apiURL + requestPaths.userLoginPath.rawValue
+    let registerUrl = apiService().apiURL + requestPaths.userRegisterPath.rawValue
 }

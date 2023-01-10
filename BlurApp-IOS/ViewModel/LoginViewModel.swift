@@ -10,22 +10,20 @@ import Alamofire
 import SwiftyJSON
 
 class userLoginVM{
-    var reqURL = apiService().apiURL + requestPaths.userLoginPath.rawValue
-    
-    func userLoginReq(Email: String, Password: String) {
-
-        let paramJson : JSON = ["email":"\(Email)","password":"\(Password)"]
+    func userLoginReq(Email: String, Password: String){
         
-        AF.request(reqURL, method: .post ,parameters: paramJson ,encoder: JSONParameterEncoder.default,headers: apiService().reqHeaders).responseDecodable(of : userProps.self, completionHandler: { response in
+        let paramJson : JSON = ["email":"\(Email)","password":"\(Password)"]
+
+        AF.request(reqUrl().loginUrl, method: .post ,parameters: paramJson ,encoder: JSONParameterEncoder.default,headers: apiService().reqHeaders).responseDecodable(of : userProps.self, completionHandler: { response in
               switch response.result {
               case .success(let data):
+                  userDefaultsOptions().saveLoginUserInfo(userInfoLogin: data)
               print(data)
-                  // veritutulacak
               case .failure(let error):
+                  userDefaultsOptions().userLogout()
               print(error.localizedDescription)
               }
           })
     }
-    
 }
 

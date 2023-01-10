@@ -26,16 +26,28 @@ public class    mapFuncs:UIViewController,MKMapViewDelegate,CLLocationManagerDel
         LM.startUpdatingLocation()
         
     }
-    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let userLocation = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
-        
-        let span = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-        let region = MKCoordinateRegion(center: userLocation, span: span)
-        mapView?.setRegion(region, animated: true)
-        
-        
-    }
     
+    func getUserAdress(location : CLLocation){   // kullanılmıyor.
+        let geoCoder = CLGeocoder()
+        geoCoder.reverseGeocodeLocation(location){
+            (placemarks, error) in
+            
+            if let error = error{
+                print(error)
+            }
+            else if let placemarks = placemarks{
+                for placemark in placemarks{
+                    let adress = [placemark.name,
+                                  placemark.thoroughfare,
+                                  placemark.locality,
+                                  placemark.subAdministrativeArea,
+                                  placemark.country,
+                                  placemark.postalCode].compactMap({$0}).joined(separator : ", ")
+                    print(adress)
+                }
+            }
+        }
+    }
 }
 
 

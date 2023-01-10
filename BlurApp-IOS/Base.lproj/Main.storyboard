@@ -41,23 +41,21 @@
                                 <rect key="frame" x="0.0" y="748" width="393" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2F-vK-7fo">
-                                <rect key="frame" x="0.0" y="130" width="331" height="45"/>
+                            <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="u2F-vK-7fo">
+                                <rect key="frame" x="0.0" y="130" width="393" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="78r-oh-GMt"/>
+                                    <constraint firstAttribute="height" constant="45" id="tyt-vp-J7m"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Mustafa Kemal Mahallesi, Kaybaklar cd, 3665 Menemen/İzmir" cornerStyle="large">
-                                    <backgroundConfiguration key="background" strokeWidth="2">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="13"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Mustafa Kemal Mahallesi, Kaybaklar cd, 3665 Menemen/ASDSAFASŞGJDGŞKDSJGSŞKDGJSDŞKGJSDFFFFFFFFFF">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" title="1 Stockton st, Stockton st, san francisco, san francisco county, amerikabirleşik devletleri,94108" subtitle="" titleAlignment="automatic">
                                     <fontDescription key="titleFontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="13"/>
-                                    <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-hl-GBz">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xc-hl-GBz">
                                 <rect key="frame" x="332" y="130" width="58.333333333333314" height="45"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" imagePlacement="bottom" title="Konum" cornerStyle="large">
@@ -70,9 +68,12 @@
                                     <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btngetCurrentLocation:" destination="cMM-ky-een" eventType="touchUpInside" id="0PD-EC-sOx"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXR-yt-EQt">
-                                <rect key="frame" x="0.0" y="179" width="392" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXR-yt-EQt">
+                                <rect key="frame" x="0.0" y="179" width="393" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDr-IG-x5B">
@@ -112,8 +113,8 @@
                                 <rect key="frame" x="0.0" y="441" width="393" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-F8-X1B">
-                                <rect key="frame" x="0.0" y="535" width="392" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSZ-F8-X1B">
+                                <rect key="frame" x="0.0" y="535" width="393" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agD-Rm-Per">
@@ -152,28 +153,26 @@
                             <constraint firstItem="r4o-qG-Mu7" firstAttribute="trailing" secondItem="7xc-hl-GBz" secondAttribute="trailing" constant="2.6666666666666856" id="8JV-1m-dxV"/>
                             <constraint firstItem="dFi-gj-Ifd" firstAttribute="top" secondItem="GXc-LZ-0D5" secondAttribute="top" constant="444" id="9B3-E5-J7i"/>
                             <constraint firstItem="cRc-np-L2z" firstAttribute="top" secondItem="x9H-bz-GSt" secondAttribute="bottom" constant="2" id="B1a-H3-t54"/>
-                            <constraint firstItem="u2F-vK-7fo" firstAttribute="leading" secondItem="xXR-yt-EQt" secondAttribute="leading" id="BY3-mb-kdk"/>
+                            <constraint firstItem="u2F-vK-7fo" firstAttribute="bottom" secondItem="7xc-hl-GBz" secondAttribute="bottom" id="B5Y-Q6-wHB"/>
                             <constraint firstItem="Jh1-ka-7Tg" firstAttribute="leading" secondItem="cRc-np-L2z" secondAttribute="leading" id="Bu4-o3-XPc"/>
                             <constraint firstItem="FSZ-F8-X1B" firstAttribute="leading" secondItem="XIF-8L-4V2" secondAttribute="leading" id="Cla-3K-RNj"/>
-                            <constraint firstItem="u2F-vK-7fo" firstAttribute="bottom" secondItem="7xc-hl-GBz" secondAttribute="bottom" id="EDM-hx-Q6L"/>
                             <constraint firstItem="YzQ-0R-p3M" firstAttribute="centerX" secondItem="FSZ-F8-X1B" secondAttribute="centerX" id="EpX-aj-BOM"/>
                             <constraint firstItem="xXR-yt-EQt" firstAttribute="centerX" secondItem="GXc-LZ-0D5" secondAttribute="centerX" id="FLc-sw-0c5"/>
                             <constraint firstItem="a9d-TC-GyU" firstAttribute="trailing" secondItem="qDr-IG-x5B" secondAttribute="trailing" id="GSB-se-dzn"/>
-                            <constraint firstItem="u2F-vK-7fo" firstAttribute="top" secondItem="7xc-hl-GBz" secondAttribute="top" id="GfC-P3-K8W"/>
                             <constraint firstItem="7xc-hl-GBz" firstAttribute="leading" secondItem="XVe-lm-Eh3" secondAttribute="trailing" constant="25" id="HRP-m9-CDn"/>
-                            <constraint firstItem="xXR-yt-EQt" firstAttribute="top" secondItem="u2F-vK-7fo" secondAttribute="bottom" constant="4" id="Hoq-xf-r15"/>
                             <constraint firstItem="qDr-IG-x5B" firstAttribute="top" secondItem="GXc-LZ-0D5" secondAttribute="top" constant="183" id="HsG-dx-lIG"/>
                             <constraint firstItem="qDr-IG-x5B" firstAttribute="top" secondItem="xXR-yt-EQt" secondAttribute="bottom" constant="3" id="If4-SD-2SW"/>
                             <constraint firstItem="xXR-yt-EQt" firstAttribute="top" secondItem="XVe-lm-Eh3" secondAttribute="bottom" constant="45" id="J4M-E6-0gm"/>
                             <constraint firstItem="Jh1-ka-7Tg" firstAttribute="top" secondItem="qDr-IG-x5B" secondAttribute="bottom" constant="5" id="LxE-FQ-mpU"/>
+                            <constraint firstItem="u2F-vK-7fo" firstAttribute="leading" secondItem="r4o-qG-Mu7" secondAttribute="leading" id="NSb-Px-NQK"/>
                             <constraint firstItem="AzY-go-Z9q" firstAttribute="top" secondItem="FSZ-F8-X1B" secondAttribute="bottom" constant="5" id="OIk-FD-hjU"/>
                             <constraint firstItem="Jh1-ka-7Tg" firstAttribute="centerX" secondItem="x9H-bz-GSt" secondAttribute="centerX" id="OZF-VH-Hju"/>
-                            <constraint firstItem="7xc-hl-GBz" firstAttribute="leading" secondItem="u2F-vK-7fo" secondAttribute="trailing" constant="1" id="PJm-4y-w51"/>
+                            <constraint firstItem="u2F-vK-7fo" firstAttribute="top" secondItem="7xc-hl-GBz" secondAttribute="top" id="R2X-Qi-zab"/>
                             <constraint firstItem="qDr-IG-x5B" firstAttribute="trailing" secondItem="Jh1-ka-7Tg" secondAttribute="trailing" id="Rfd-UL-qJi"/>
+                            <constraint firstItem="xXR-yt-EQt" firstAttribute="top" secondItem="u2F-vK-7fo" secondAttribute="bottom" constant="4" id="SfQ-wB-jeX"/>
                             <constraint firstItem="agD-Rm-Per" firstAttribute="trailing" secondItem="XIF-8L-4V2" secondAttribute="trailing" id="TYz-T4-smi"/>
-                            <constraint firstItem="a9d-TC-GyU" firstAttribute="leading" secondItem="u2F-vK-7fo" secondAttribute="leading" id="Ut6-Yw-jp1"/>
                             <constraint firstItem="AzY-go-Z9q" firstAttribute="top" secondItem="GXc-LZ-0D5" secondAttribute="top" constant="541" id="WYi-e5-eJb"/>
-                            <constraint firstItem="u2F-vK-7fo" firstAttribute="top" secondItem="a9d-TC-GyU" secondAttribute="bottom" constant="4" id="WaZ-9f-EDh"/>
+                            <constraint firstItem="u2F-vK-7fo" firstAttribute="leading" secondItem="xXR-yt-EQt" secondAttribute="leading" id="Y4M-YD-gB2"/>
                             <constraint firstItem="agD-Rm-Per" firstAttribute="top" secondItem="GXc-LZ-0D5" secondAttribute="top" constant="498" id="a43-HZ-d2a"/>
                             <constraint firstItem="cRc-np-L2z" firstAttribute="leading" secondItem="agD-Rm-Per" secondAttribute="leading" id="ad0-rn-0HB"/>
                             <constraint firstItem="x9H-bz-GSt" firstAttribute="top" secondItem="Jh1-ka-7Tg" secondAttribute="bottom" constant="2" id="bae-dk-aIA"/>
@@ -187,14 +186,16 @@
                             <constraint firstItem="xXR-yt-EQt" firstAttribute="trailing" secondItem="FSZ-F8-X1B" secondAttribute="trailing" id="oBW-Sw-dTM"/>
                             <constraint firstItem="dFi-gj-Ifd" firstAttribute="trailing" secondItem="AzY-go-Z9q" secondAttribute="trailing" id="oL1-9G-02y"/>
                             <constraint firstItem="r4o-qG-Mu7" firstAttribute="bottom" secondItem="XIF-8L-4V2" secondAttribute="bottom" constant="20" id="oUD-tB-z9q"/>
+                            <constraint firstItem="u2F-vK-7fo" firstAttribute="top" secondItem="a9d-TC-GyU" secondAttribute="bottom" constant="4" id="pwa-Dz-wgo"/>
+                            <constraint firstItem="r4o-qG-Mu7" firstAttribute="trailing" secondItem="u2F-vK-7fo" secondAttribute="trailing" id="qkq-hR-xav"/>
                             <constraint firstItem="FSZ-F8-X1B" firstAttribute="top" secondItem="GXc-LZ-0D5" secondAttribute="top" constant="535" id="ruS-Wh-2ef"/>
                             <constraint firstItem="agD-Rm-Per" firstAttribute="leading" secondItem="FSZ-F8-X1B" secondAttribute="leading" id="sM6-wd-cKb"/>
                             <constraint firstItem="XIF-8L-4V2" firstAttribute="top" secondItem="AzY-go-Z9q" secondAttribute="bottom" constant="5" id="scQ-uC-aMh"/>
-                            <constraint firstItem="u2F-vK-7fo" firstAttribute="leading" secondItem="r4o-qG-Mu7" secondAttribute="leading" id="snl-K1-w69"/>
                             <constraint firstItem="YzQ-0R-p3M" firstAttribute="top" secondItem="agD-Rm-Per" secondAttribute="bottom" constant="1" id="wFj-Wj-HyV"/>
                             <constraint firstItem="agD-Rm-Per" firstAttribute="centerX" secondItem="YzQ-0R-p3M" secondAttribute="centerX" id="wGd-U4-nxA"/>
                             <constraint firstItem="cRc-np-L2z" firstAttribute="trailing" secondItem="agD-Rm-Per" secondAttribute="trailing" id="ypS-l5-ti1"/>
                             <constraint firstItem="qDr-IG-x5B" firstAttribute="leading" secondItem="Jh1-ka-7Tg" secondAttribute="leading" id="z4H-wE-WcL"/>
+                            <constraint firstItem="a9d-TC-GyU" firstAttribute="leading" secondItem="u2F-vK-7fo" secondAttribute="leading" id="zpr-7o-XOc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" selectedImage="house.fill" catalog="system" id="jew-7H-PnZ">
@@ -203,12 +204,14 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="75P-Cb-5Qd"/>
                     <connections>
+                        <outlet property="btnUserAdress" destination="u2F-vK-7fo" id="FU3-W9-LOe"/>
+                        <outlet property="btngetCurrentLocation" destination="7xc-hl-GBz" id="Dok-GU-1Dy"/>
                         <outlet property="mapView" destination="qDr-IG-x5B" id="urb-s7-eeV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmd-JC-37H" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7312" y="-275"/>
+            <point key="canvasLocation" x="7310.6870229007627" y="-275.35211267605638"/>
         </scene>
         <!--Location Map View Controller-->
         <scene sceneID="lMc-ei-GIQ">
@@ -402,8 +405,68 @@
                                 <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDL-uJ-q9O">
-                                <rect key="frame" x="116" y="389" width="152" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="veya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuT-Dk-GSl">
+                                <rect key="frame" x="175" y="497" width="42" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIH-WY-aht">
+                                <rect key="frame" x="62" y="576" width="64" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                                    <backgroundConfiguration key="background" image="icons8-apple-logo-50" imageContentMode="scaleAspectFit" strokeWidth="2">
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXV-iq-GA3">
+                                <rect key="frame" x="164" y="576" width="64" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                                    <backgroundConfiguration key="background" image="icons8-google-48" imageContentMode="scaleAspectFit" strokeWidth="2">
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3A-Kz-hKt">
+                                <rect key="frame" x="267" y="576" width="64" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
+                                    <backgroundConfiguration key="background" image="icons8-facebook-40" imageContentMode="scaleAspectFit" strokeWidth="2">
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGc-TB-2ua">
+                                <rect key="frame" x="119" y="359" width="152" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Kontrol et" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="LexendDeca-SemiBold" family="Lexend Deca" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnCheckClicked:" destination="B7Z-WG-TgV" eventType="touchUpInside" id="UIh-IN-YcL"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDL-uJ-q9O">
+                                <rect key="frame" x="118" y="439" width="152" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Devam et" cornerStyle="large">
@@ -416,52 +479,9 @@
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnloginClicked:" destination="B7Z-WG-TgV" eventType="touchUpInside" id="MGe-HC-wKE"/>
-                                    <segue destination="n2f-jX-8T0" kind="presentation" modalPresentationStyle="fullScreen" id="lN9-UQ-2px"/>
+                                    <action selector="btnLoginClicked:" destination="B7Z-WG-TgV" eventType="touchUpInside" id="nYg-q5-kmf"/>
+                                    <segue destination="n2f-jX-8T0" kind="presentation" identifier="login2MainScreenSegue" modalPresentationStyle="fullScreen" id="KvT-l7-Vy8"/>
                                 </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="veya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuT-Dk-GSl">
-                                <rect key="frame" x="171" y="478" width="42" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIH-WY-aht">
-                                <rect key="frame" x="58" y="557" width="64" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
-                                    <backgroundConfiguration key="background" image="icons8-apple-logo-50" imageContentMode="scaleAspectFit" strokeWidth="2">
-                                        <color key="backgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXV-iq-GA3">
-                                <rect key="frame" x="160" y="557" width="64" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
-                                    <backgroundConfiguration key="background" image="icons8-google-48" imageContentMode="scaleAspectFit" strokeWidth="2">
-                                        <color key="backgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3A-Kz-hKt">
-                                <rect key="frame" x="263" y="557" width="64" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="large">
-                                    <backgroundConfiguration key="background" image="icons8-facebook-40" imageContentMode="scaleAspectFit" strokeWidth="2">
-                                        <color key="backgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0PD-2f-Sy9"/>
@@ -470,13 +490,15 @@
                     </view>
                     <navigationItem key="navigationItem" style="editor" id="bxp-fz-mYR"/>
                     <connections>
+                        <outlet property="btnCheck" destination="NDL-uJ-q9O" id="JSN-bV-N9O"/>
+                        <outlet property="btnLogin" destination="NDL-uJ-q9O" id="F5M-xR-gzM"/>
                         <outlet property="emailTextField" destination="WNc-8R-baK" id="qhq-6I-5hH"/>
                         <outlet property="passwordTextField" destination="Z1D-Ta-Tb1" id="moU-oY-Ft8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9k-Cx-nQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2514" y="-87"/>
+            <point key="canvasLocation" x="2513.740458015267" y="-87.323943661971839"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="hcn-2c-g0L">
@@ -667,6 +689,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="n2f-jX-8T0" kind="presentation" modalPresentationStyle="fullScreen" id="cCd-QJ-Jhq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lütfen emal adresinize gelen 5 haneli doğrulama kodunu giriniz." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRD-Ko-0fi">
                                 <rect key="frame" x="16" y="192" width="361" height="56"/>
@@ -767,7 +792,7 @@
                                         <color key="tintColor" red="0.69559693570000003" green="0.67230246230000001" blue="0.68728062229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mert Şahin (Admin)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-oE-4rM">
-                                        <rect key="frame" x="91" y="39" width="132" height="18"/>
+                                        <rect key="frame" x="91" y="39" width="225" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
                                         <nil key="textColor"/>
@@ -834,14 +859,14 @@
                                         <color key="tintColor" red="0.69559693570000003" green="0.67230246230000001" blue="0.68728062229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mertsahin@bakircay.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpO-tK-W0t">
-                                        <rect key="frame" x="65" y="119" width="149" height="15"/>
+                                        <rect key="frame" x="65" y="119" width="236" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+90 555 555 55 55" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUT-u2-IJ5">
-                                        <rect key="frame" x="65" y="179" width="103" height="15"/>
+                                        <rect key="frame" x="65" y="179" width="222" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -933,7 +958,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dln-dz-jxb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3402" y="-87"/>
+            <point key="canvasLocation" x="3400.7633587786258" y="-87.323943661971839"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Idi-wp-Fs4">
@@ -1002,8 +1027,8 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.69559693570000003" green="0.67230246230000001" blue="0.68728062229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mert Şahin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEe-qh-CDG">
-                                        <rect key="frame" x="91" y="39" width="74" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mert Şahin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEe-qh-CDG">
+                                        <rect key="frame" x="91" y="39" width="232" height="18"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
                                         <nil key="textColor"/>
@@ -1080,14 +1105,14 @@
                                         <color key="tintColor" red="0.69559693570000003" green="0.67230246230000001" blue="0.68728062229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mertsahin@bakircay.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWx-Ag-jZf">
-                                        <rect key="frame" x="65" y="119" width="149" height="15"/>
+                                        <rect key="frame" x="65" y="119" width="241" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+90 555 555 55 55" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RK-mC-osT">
-                                        <rect key="frame" x="65" y="179" width="103" height="15"/>
+                                        <rect key="frame" x="65" y="179" width="236" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1109,13 +1134,6 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Destek" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiP-Zo-3aW">
                                         <rect key="frame" x="65" y="358" width="41" height="15"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Çıkış yap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fz-Cs-jcR">
-                                        <rect key="frame" x="65" y="421" width="52" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1162,6 +1180,15 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iba-ji-A6D">
+                                        <rect key="frame" x="53" y="410" width="198" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Çıkış yap">
+                                            <fontDescription key="titleFontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -1175,12 +1202,21 @@
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="qhd-81-00W"/>
+                    <connections>
+                        <outlet property="usersAdressText" destination="cXI-AN-COi" id="KcW-2f-iFy"/>
+                        <outlet property="usersEmailText" destination="iWx-Ag-jZf" id="hs0-cD-T5n"/>
+                        <outlet property="usersNameText" destination="UEe-qh-CDG" id="dLA-H4-fTX"/>
+                        <outlet property="usersPhoneNumberText" destination="2RK-mC-osT" id="Rgc-fU-zDz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4V-OH-Eo0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7234" y="1132"/>
+            <point key="canvasLocation" x="7310.6870229007627" y="1131.6901408450706"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cCd-QJ-Jhq"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="door.left.hand.open" catalog="system" width="108" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>

@@ -10,20 +10,17 @@ import Alamofire
 import SwiftyJSON
 
 class userRegisterVM{
-    var reqURL = apiService().apiURL + requestPaths.userRegisterPath.rawValue
-    
+    //2 kez girmek zorunda kalıyor.
     func userRegisterReq(Email: String, Password: String,Name : String, Surname: String){
         
         let paramRegister : JSON = ["email":"\(Email)","password":"\(Password)","name":"\(Name)","surname":"\(Surname)"]
         
-        AF.request(reqURL, method: .post ,parameters: paramRegister ,encoder: JSONParameterEncoder.default,headers: apiService().reqHeaders).responseDecodable(of : mainUser.self, completionHandler: { response in
+        AF.request(reqUrl().registerUrl, method: .post ,parameters: paramRegister ,encoder: JSONParameterEncoder.default,headers: apiService().reqHeaders).responseDecodable(of : mainUser.self, completionHandler: { response in
               switch response.result {
-              
               case .success(let data):
-              print(data)
-                  // veritutulacak
-              case .failure(let error):
-              print(error.localizedDescription)
+                  userDefaultsOptions().saveRegisterUserInfo(userInfoLogin: data)
+              case .failure(_):
+                  userDefaultsOptions().userLogout()
               }
           })
       

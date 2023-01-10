@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct mainUser : Decodable{
+struct mainUser : Codable{
     let user : userProps?
 }
 
-struct userProps : Decodable {
+struct userProps : Codable {
     let id : ids
     let email : String?
     let password : String?
@@ -21,7 +21,7 @@ struct userProps : Decodable {
     let tokenExpiresIn : String?
 }
 
-struct ids: Decodable{
+struct ids: Codable{
     let timestamp : Double?
     let machine : Double?
     let pid : Double?
@@ -30,7 +30,7 @@ struct ids: Decodable{
 }
 
 
-struct userLogin : Decodable{
+struct userLogin : Codable{
     let email : String?
     let password : String?
 }

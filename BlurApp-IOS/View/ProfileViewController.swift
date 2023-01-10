@@ -9,21 +9,27 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var usersNameText: UILabel!
+    
+    @IBOutlet weak var usersEmailText: UILabel!
+    
+    @IBOutlet weak var usersPhoneNumberText: UILabel!
+    
+    @IBOutlet weak var usersAdressText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+getUserInfo()
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func getUserInfo(){
+        let userInfo = userDefaultsOptions().getUserInfo()
+        let userAdress = userDefaultsOptions().getUserAdress()
+        usersNameText.text! = "\(userInfo.name!.capitalized) \(userInfo.surname!.capitalized)"
+        usersEmailText.text = userInfo.email
+        usersPhoneNumberText.text = "Yakında gerekecek"
+        usersAdressText.text = userAdress
     }
-    */
-
 }
