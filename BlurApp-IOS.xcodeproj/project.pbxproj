@@ -11,9 +11,12 @@
 		DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB648CED296619AA0010C54D /* DefaultStorage.swift */; };
 		DB67A49329655D7C005AD138 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49229655D7C005AD138 /* Alamofire */; };
 		DB67A49C2965A3E1005AD138 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49B2965A3E1005AD138 /* SwiftyJSON */; };
+		DB795F132970B5DF00A909B6 /* CreateProfessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */; };
+		DB795F152970B9ED00A909B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB795F142970B9ED00A909B6 /* ViewController.swift */; };
 		DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11C295D236900AEB617 /* Workplace.swift */; };
 		DB8AC121295D241000AEB617 /* BlurApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC120295D241000AEB617 /* BlurApiService.swift */; };
-		DBB412C3296DAB4100FD3D22 /* ProfessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB412C2296DAB4100FD3D22 /* ProfessionViewModel.swift */; };
+		DBABAF0C297044EB0072D52E /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBABAF0B297044EB0072D52E /* Profession.swift */; };
+		DBB412C3296DAB4100FD3D22 /* WorkplaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB412C2296DAB4100FD3D22 /* WorkplaceViewModel.swift */; };
 		DBB412C5296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */; };
 		DBBC24E2295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DC295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf */; };
 		DBBC24E3295A9AD800CC6A7C /* LexendDeca-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DD295A9AD800CC6A7C /* LexendDeca-Light.ttf */; };
@@ -64,9 +67,12 @@
 /* Begin PBXFileReference section */
 		DB55359E296F7B7900F9C149 /* getWorkplaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getWorkplaces.swift; sourceTree = "<group>"; };
 		DB648CED296619AA0010C54D /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
+		DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfessionViewController.swift; sourceTree = "<group>"; };
+		DB795F142970B9ED00A909B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB8AC11C295D236900AEB617 /* Workplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace.swift; sourceTree = "<group>"; };
 		DB8AC120295D241000AEB617 /* BlurApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurApiService.swift; sourceTree = "<group>"; };
-		DBB412C2296DAB4100FD3D22 /* ProfessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionViewModel.swift; sourceTree = "<group>"; };
+		DBABAF0B297044EB0072D52E /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
+		DBB412C2296DAB4100FD3D22 /* WorkplaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkplaceViewModel.swift; sourceTree = "<group>"; };
 		DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkplaceViewController.swift; sourceTree = "<group>"; };
 		DBBC24DC295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendExa-ExtraBold.ttf"; sourceTree = "<group>"; };
 		DBBC24DD295A9AD800CC6A7C /* LexendDeca-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Light.ttf"; sourceTree = "<group>"; };
@@ -250,6 +256,8 @@
 				DBF5712F295A93F6009F2DA8 /* RegisterViewController.swift */,
 				DBF57131295A9400009F2DA8 /* VerificationViewController.swift */,
 				DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */,
+				DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */,
+				DB795F142970B9ED00A909B6 /* ViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,7 +278,7 @@
 				DBE84F84295E469900B1F26F /* LoginViewModel.swift */,
 				DBE84F86295E46AF00B1F26F /* RegisterViewModel.swift */,
 				DBE84F88295E46BA00B1F26F /* VerificationViewModel.swift */,
-				DBB412C2296DAB4100FD3D22 /* ProfessionViewModel.swift */,
+				DBB412C2296DAB4100FD3D22 /* WorkplaceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 			children = (
 				DB8AC11C295D236900AEB617 /* Workplace.swift */,
 				DB55359E296F7B7900F9C149 /* getWorkplaces.swift */,
+				DBABAF0B297044EB0072D52E /* Profession.swift */,
 			);
 			path = BusinessProps;
 			sourceTree = "<group>";
@@ -440,8 +449,10 @@
 				DBB412C5296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift in Sources */,
 				DBBC24ED295B316900CC6A7C /* User.swift in Sources */,
 				DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */,
+				DB795F132970B5DF00A909B6 /* CreateProfessionViewController.swift in Sources */,
 				DBF57130295A93F6009F2DA8 /* RegisterViewController.swift in Sources */,
-				DBB412C3296DAB4100FD3D22 /* ProfessionViewModel.swift in Sources */,
+				DBB412C3296DAB4100FD3D22 /* WorkplaceViewModel.swift in Sources */,
+				DB795F152970B9ED00A909B6 /* ViewController.swift in Sources */,
 				DBF57125295A93B6009F2DA8 /* LocationMapViewController.swift in Sources */,
 				DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */,
 				DBF570F5295A933D009F2DA8 /* BlurApp_IOS.xcdatamodeld in Sources */,
@@ -456,6 +467,7 @@
 				DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */,
 				DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */,
 				DBF5712D295A93E3009F2DA8 /* ProfileViewController.swift in Sources */,
+				DBABAF0C297044EB0072D52E /* Profession.swift in Sources */,
 				DBF570ED295A933D009F2DA8 /* SceneDelegate.swift in Sources */,
 				DB8AC121295D241000AEB617 /* BlurApiService.swift in Sources */,
 			);

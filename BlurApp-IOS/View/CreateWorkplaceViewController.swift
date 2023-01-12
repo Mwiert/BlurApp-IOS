@@ -59,7 +59,8 @@ class CreateWorkplaceViewController: UIViewController, MKMapViewDelegate, CLLoca
     }
     
     @IBAction func denemeBtn(_ sender: Any) {
-        let deneme = WorkplaceVM().getWorkplacesByCategory()
+      //  let deneme = WorkplaceVM().getWorkplacesByCategory()
+    //    let meslekEkle =  WorkplaceVM().createProfession()
     }
     
     

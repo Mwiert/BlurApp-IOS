@@ -36,6 +36,9 @@ enum requestPaths : String {
     case createWorkplace = "api/user/createworkplace/" // method POST
     case getallWorkplaces = "api/user/getallworkplaces/" // method GET
     case createProfession = "api/user/createprofession/" // method POST
+    case createSingleProfession = "api/user/createsingleprofession/" // method POST
+    case getallProfessions = "api/user/getallprofessions/" // method GET
+    case getnearestWorkPlaces = "api/user/getnearestworkplaces/" // method POST
 }
 
 struct reqUrl{
@@ -43,5 +46,8 @@ struct reqUrl{
     let registerUrl = apiService().apiURL + requestPaths.userRegisterPath.rawValue
     let createProfessionUrl = apiService().apiURL + requestPaths.createProfession.rawValue
     let createWorkplaceUrl = apiService().apiURL + requestPaths.createWorkplace.rawValue
-    let getallWorkplaces = apiService().apiURL + requestPaths.getallWorkplaces.rawValue
+    let getallWorkplacesUrl = apiService().apiURL + requestPaths.getallWorkplaces.rawValue
+    let createSingleProfessionUrl = apiService().apiURL + requestPaths.createSingleProfession.rawValue
+    let getallProfessionsUrl = apiService().apiURL + requestPaths.getallProfessions.rawValue
+    let getnearestWorkPlacesUrl = apiService().apiURL + requestPaths.getnearestWorkPlaces.rawValue
 }

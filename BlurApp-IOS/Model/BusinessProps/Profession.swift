@@ -2,12 +2,19 @@
 //  Profession.swift
 //  BlurApp-IOS
 //
-//  Created by Mert Şahin on 29.12.2022.
+//  Created by Mert Şahin on 12.01.2023.
 //
 
 import Foundation
 
-struct Profession : Codable {
-    let id: UUID
-    let nameOfProfession : String?
+struct professionInfo : Codable {
+    let id : ID
+    let nameOfProfession : String
 }
+
+struct professionInfoString : Codable {
+    let id : String
+    let nameOfProfession : String
+}
+
+
