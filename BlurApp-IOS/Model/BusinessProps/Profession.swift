@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Profession :Codable {
+struct Profession : Codable {
     let id: UUID
     let nameOfProfession : String?
 }

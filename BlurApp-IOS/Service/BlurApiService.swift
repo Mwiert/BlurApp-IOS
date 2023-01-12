@@ -12,11 +12,20 @@ import SwiftyJSON
 public class apiService{
      let apiURL : String = "http://localhost:5208/"
     
-    
+    func headerWithToken() -> HTTPHeaders{
+        let token = userDefaultsOptions().getUserInfo().token!
+        let headerWithToken: HTTPHeaders = [
+            .authorization(bearerToken: token),
+            .accept("application/json"),
+            .contentType("application/json")
+        ]
+        return headerWithToken
+    }
     let reqHeaders: HTTPHeaders = [
         "accept" : "application/json",
         "Content-Type": "application/json"
     ]
+    
     
 // genel AF fonksiyonu yazılabilir.
 
@@ -32,4 +41,7 @@ enum requestPaths : String {
 struct reqUrl{
     let loginUrl = apiService().apiURL + requestPaths.userLoginPath.rawValue
     let registerUrl = apiService().apiURL + requestPaths.userRegisterPath.rawValue
+    let createProfessionUrl = apiService().apiURL + requestPaths.createProfession.rawValue
+    let createWorkplaceUrl = apiService().apiURL + requestPaths.createWorkplace.rawValue
+    let getallWorkplaces = apiService().apiURL + requestPaths.getallWorkplaces.rawValue
 }

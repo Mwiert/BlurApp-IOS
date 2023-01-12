@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55359E296F7B7900F9C149 /* getWorkplaces.swift */; };
 		DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB648CED296619AA0010C54D /* DefaultStorage.swift */; };
 		DB67A49329655D7C005AD138 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49229655D7C005AD138 /* Alamofire */; };
 		DB67A49C2965A3E1005AD138 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49B2965A3E1005AD138 /* SwiftyJSON */; };
 		DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11C295D236900AEB617 /* Workplace.swift */; };
-		DB8AC11F295D23C900AEB617 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11E295D23C900AEB617 /* Location.swift */; };
 		DB8AC121295D241000AEB617 /* BlurApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC120295D241000AEB617 /* BlurApiService.swift */; };
-		DB8AC123295D279700AEB617 /* Profession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC122295D279700AEB617 /* Profession.swift */; };
+		DBB412C3296DAB4100FD3D22 /* ProfessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB412C2296DAB4100FD3D22 /* ProfessionViewModel.swift */; };
+		DBB412C5296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */; };
 		DBBC24E2295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DC295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf */; };
 		DBBC24E3295A9AD800CC6A7C /* LexendDeca-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DD295A9AD800CC6A7C /* LexendDeca-Light.ttf */; };
 		DBBC24E4295A9AD800CC6A7C /* LexendExa-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24DE295A9AD800CC6A7C /* LexendExa-SemiBold.ttf */; };
@@ -21,7 +22,6 @@
 		DBBC24E6295A9AD800CC6A7C /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24E0295A9AD800CC6A7C /* LexendDeca-Regular.ttf */; };
 		DBBC24E7295A9AD800CC6A7C /* LexendDeca-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBBC24E1295A9AD800CC6A7C /* LexendDeca-ExtraBold.ttf */; };
 		DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */; };
-		DBBC24EB295B315B00CC6A7C /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */; };
 		DBBC24ED295B316900CC6A7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC24EC295B316900CC6A7C /* User.swift */; };
 		DBE84F85295E469900B1F26F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE84F84295E469900B1F26F /* LoginViewModel.swift */; };
 		DBE84F87295E46AF00B1F26F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE84F86295E46AF00B1F26F /* RegisterViewModel.swift */; };
@@ -62,11 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB55359E296F7B7900F9C149 /* getWorkplaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getWorkplaces.swift; sourceTree = "<group>"; };
 		DB648CED296619AA0010C54D /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
 		DB8AC11C295D236900AEB617 /* Workplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace.swift; sourceTree = "<group>"; };
-		DB8AC11E295D23C900AEB617 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		DB8AC120295D241000AEB617 /* BlurApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurApiService.swift; sourceTree = "<group>"; };
-		DB8AC122295D279700AEB617 /* Profession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profession.swift; sourceTree = "<group>"; };
+		DBB412C2296DAB4100FD3D22 /* ProfessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionViewModel.swift; sourceTree = "<group>"; };
+		DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkplaceViewController.swift; sourceTree = "<group>"; };
 		DBBC24DC295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendExa-ExtraBold.ttf"; sourceTree = "<group>"; };
 		DBBC24DD295A9AD800CC6A7C /* LexendDeca-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Light.ttf"; sourceTree = "<group>"; };
 		DBBC24DE295A9AD800CC6A7C /* LexendExa-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendExa-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		DBBC24E0295A9AD800CC6A7C /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
 		DBBC24E1295A9AD800CC6A7C /* LexendDeca-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-ExtraBold.ttf"; sourceTree = "<group>"; };
 		DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMapViewModel.swift; sourceTree = "<group>"; };
-		DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		DBBC24EC295B316900CC6A7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DBE84F84295E469900B1F26F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DBE84F86295E46AF00B1F26F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -249,6 +249,7 @@
 				DBF5712C295A93E3009F2DA8 /* ProfileViewController.swift */,
 				DBF5712F295A93F6009F2DA8 /* RegisterViewController.swift */,
 				DBF57131295A9400009F2DA8 /* VerificationViewController.swift */,
+				DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,10 +267,10 @@
 			isa = PBXGroup;
 			children = (
 				DBBC24E8295B314B00CC6A7C /* NavigationMapViewModel.swift */,
-				DBBC24EA295B315B00CC6A7C /* TabBarViewModel.swift */,
 				DBE84F84295E469900B1F26F /* LoginViewModel.swift */,
 				DBE84F86295E46AF00B1F26F /* RegisterViewModel.swift */,
 				DBE84F88295E46BA00B1F26F /* VerificationViewModel.swift */,
+				DBB412C2296DAB4100FD3D22 /* ProfessionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,7 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				DB8AC11C295D236900AEB617 /* Workplace.swift */,
-				DB8AC122295D279700AEB617 /* Profession.swift */,
+				DB55359E296F7B7900F9C149 /* getWorkplaces.swift */,
 			);
 			path = BusinessProps;
 			sourceTree = "<group>";
@@ -287,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				DBBC24EC295B316900CC6A7C /* User.swift */,
-				DB8AC11E295D23C900AEB617 /* Location.swift */,
 			);
 			path = UserProps;
 			sourceTree = "<group>";
@@ -437,10 +437,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB412C5296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift in Sources */,
 				DBBC24ED295B316900CC6A7C /* User.swift in Sources */,
 				DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */,
-				DB8AC11F295D23C900AEB617 /* Location.swift in Sources */,
 				DBF57130295A93F6009F2DA8 /* RegisterViewController.swift in Sources */,
+				DBB412C3296DAB4100FD3D22 /* ProfessionViewModel.swift in Sources */,
 				DBF57125295A93B6009F2DA8 /* LocationMapViewController.swift in Sources */,
 				DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */,
 				DBF570F5295A933D009F2DA8 /* BlurApp_IOS.xcdatamodeld in Sources */,
@@ -448,11 +449,10 @@
 				DBE84F87295E46AF00B1F26F /* RegisterViewModel.swift in Sources */,
 				DBE84F85295E469900B1F26F /* LoginViewModel.swift in Sources */,
 				DBF570EB295A933D009F2DA8 /* AppDelegate.swift in Sources */,
-				DB8AC123295D279700AEB617 /* Profession.swift in Sources */,
 				DBF57129295A93D0009F2DA8 /* MainViewController.swift in Sources */,
 				DBE84F89295E46BA00B1F26F /* VerificationViewModel.swift in Sources */,
 				DBF57127295A93C8009F2DA8 /* LoginViewController.swift in Sources */,
-				DBBC24EB295B315B00CC6A7C /* TabBarViewModel.swift in Sources */,
+				DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */,
 				DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */,
 				DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */,
 				DBF5712D295A93E3009F2DA8 /* ProfileViewController.swift in Sources */,
