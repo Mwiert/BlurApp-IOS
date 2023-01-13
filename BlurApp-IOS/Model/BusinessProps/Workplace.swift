@@ -14,7 +14,7 @@ struct fullWorkplace: Codable {
 // MARK: - Workplace
 struct Workplace: Codable {
     let id: ids
-    let professionId, name: String
+    let professionName, name: String
     let location: Location
 }
 

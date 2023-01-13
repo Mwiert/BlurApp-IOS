@@ -1535,15 +1535,6 @@
                                             <action selector="btnCreateProfessionClicked:" destination="Nqg-Zc-XVG" eventType="touchUpInside" id="QGT-xB-EAz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBg-f1-BaS">
-                                        <rect key="frame" x="153" y="327" width="75" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                        <connections>
-                                            <action selector="btn:" destination="Nqg-Zc-XVG" eventType="touchUpInside" id="UKu-Di-Q4J"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meslek adını giriniz." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyX-Xa-KNm">
                                         <rect key="frame" x="108" y="104" width="155" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1551,6 +1542,17 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBg-f1-BaS">
+                                        <rect key="frame" x="110" y="609" width="170" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Meslekleri Listele">
+                                            <color key="baseBackgroundColor" red="0.36078432199999999" green="0.72941178080000002" blue="0.60392159219999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btn:" destination="Nqg-Zc-XVG" eventType="touchUpInside" id="UKu-Di-Q4J"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -1588,7 +1590,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJN-m9-YRh" sceneMemberID="firstResponder"/>
                 <exit id="nCt-ra-Nmh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="9360" y="369"/>
+            <point key="canvasLocation" x="9359.5419847328249" y="368.3098591549296"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

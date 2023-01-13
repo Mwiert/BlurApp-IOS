@@ -25,7 +25,7 @@ public class WorkplaceVM{
               switch response.result {
               case .success(let data):
             //responseData kullanılırsa bu fonksiyon ile structa ata    //  let myWorkplace = try? JSONDecoder().decode(fullWorkplace.self, from: data)
-                  let myData = data
+                  print(data)
               case .failure(_):
                   print(response.error?.localizedDescription)
               }

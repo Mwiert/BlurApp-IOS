@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB284F5029714DF200E3141E /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB284F4F29714DF200E3141E /* Coordinates.swift */; };
 		DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55359E296F7B7900F9C149 /* getWorkplaces.swift */; };
 		DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB648CED296619AA0010C54D /* DefaultStorage.swift */; };
 		DB67A49329655D7C005AD138 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49229655D7C005AD138 /* Alamofire */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB284F4F29714DF200E3141E /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		DB55359E296F7B7900F9C149 /* getWorkplaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getWorkplaces.swift; sourceTree = "<group>"; };
 		DB648CED296619AA0010C54D /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
 		DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfessionViewController.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				DB8AC11C295D236900AEB617 /* Workplace.swift */,
 				DB55359E296F7B7900F9C149 /* getWorkplaces.swift */,
 				DBABAF0B297044EB0072D52E /* Profession.swift */,
+				DB284F4F29714DF200E3141E /* Coordinates.swift */,
 			);
 			path = BusinessProps;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				DBF57127295A93C8009F2DA8 /* LoginViewController.swift in Sources */,
 				DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */,
 				DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */,
+				DB284F5029714DF200E3141E /* Coordinates.swift in Sources */,
 				DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */,
 				DBF5712D295A93E3009F2DA8 /* ProfileViewController.swift in Sources */,
 				DBABAF0C297044EB0072D52E /* Profession.swift in Sources */,
