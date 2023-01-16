@@ -18,7 +18,7 @@ class userRegisterVM{
         AF.request(reqUrl().registerUrl, method: .post ,parameters: paramRegister ,encoder: JSONParameterEncoder.default,headers: apiService().reqHeaders).responseDecodable(of : mainUser.self, completionHandler: { response in
               switch response.result {
               case .success(let data):
-                  userDefaultsOptions().saveRegisterUserInfo(userInfoLogin: data)
+                  userDefaultsOptions().saveRegisterUserInfo(userInfoRegister: data)
               case .failure(_):
                   userDefaultsOptions().userLogout()
               }

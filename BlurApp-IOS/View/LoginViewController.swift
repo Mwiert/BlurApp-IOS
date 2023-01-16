@@ -16,6 +16,10 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnCheck: UIButton!
     @IBOutlet weak var btnLogin: UIButton!
     
+    
+    var userEmail : String = ""
+    var userPassword : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,31 +27,25 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func btnLoginClicked(_ sender: Any) {
-        let userInfo = userDefaultsOptions().getUserInfo()
-        
-        if(userInfo.email! == "not found"){
+        if(emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty){
             let alert = UIAlertController(title: "Hata!", message: "Hatalı eposta veya şifre girdiniz. Lütfen tekrar deneyiniz.", preferredStyle:UIAlertController.Style.alert)
             self.present(alert, animated: true, completion: nil)
             let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default)
             alert.addAction(okButton)
         }
         else{
-            self.performSegue(withIdentifier: "login2MainScreenSegue", sender: (Any).self)
+            userEmail = emailTextField.text!
+            userPassword = passwordTextField.text!
+           performSegue(withIdentifier: "sendLoginDataSegue", sender: nil )
         }
     }
-    
-    @IBAction func btnCheckClicked(_ sender: Any) {
-       if(emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty){
-            let alert = UIAlertController(title: "Hata!", message: "Lütfen boş alanları doldurunuz.", preferredStyle:UIAlertController.Style.alert)
-            self.present(alert, animated: true, completion: nil)
-            let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default)
-            alert.addAction(okButton)
-        }
-        else{
-            userLoginVM().userLoginReq(Email: emailTextField.text!, Password: passwordTextField.text!)
-            btnCheck.setTitle("Devam ediniz", for:  .normal)
-            btnLogin.isHidden = false
-            
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sendLoginDataSegue"
+        {
+            let userLoginData = segue.destination as! RouteToMainViewController
+            userLoginData.userEmailVerify = userEmail
+            userLoginData.userPasswordVerify = userPassword
         }
     }
 }

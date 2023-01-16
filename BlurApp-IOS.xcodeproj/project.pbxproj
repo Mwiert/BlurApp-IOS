@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB252D392975B29000A11E03 /* RouteToMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB252D382975B29000A11E03 /* RouteToMainViewController.swift */; };
 		DB284F5029714DF200E3141E /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB284F4F29714DF200E3141E /* Coordinates.swift */; };
 		DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55359E296F7B7900F9C149 /* getWorkplaces.swift */; };
 		DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB648CED296619AA0010C54D /* DefaultStorage.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB252D382975B29000A11E03 /* RouteToMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToMainViewController.swift; sourceTree = "<group>"; };
 		DB284F4F29714DF200E3141E /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		DB55359E296F7B7900F9C149 /* getWorkplaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getWorkplaces.swift; sourceTree = "<group>"; };
 		DB648CED296619AA0010C54D /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */,
 				DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */,
 				DB795F142970B9ED00A909B6 /* ViewController.swift */,
+				DB252D382975B29000A11E03 /* RouteToMainViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB252D392975B29000A11E03 /* RouteToMainViewController.swift in Sources */,
 				DBB412C5296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift in Sources */,
 				DBBC24ED295B316900CC6A7C /* User.swift in Sources */,
 				DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */,

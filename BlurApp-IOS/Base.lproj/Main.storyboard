@@ -467,25 +467,8 @@
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGc-TB-2ua">
-                                <rect key="frame" x="119" y="359" width="152" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Kontrol et" cornerStyle="large">
-                                    <backgroundConfiguration key="background" strokeWidth="2">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="LexendDeca-SemiBold" family="Lexend Deca" pointSize="18"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnCheckClicked:" destination="B7Z-WG-TgV" eventType="touchUpInside" id="UIh-IN-YcL"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDL-uJ-q9O">
-                                <rect key="frame" x="118" y="439" width="152" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDL-uJ-q9O">
+                                <rect key="frame" x="116" y="401" width="152" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Devam et" cornerStyle="large">
@@ -499,7 +482,9 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btnLoginClicked:" destination="B7Z-WG-TgV" eventType="touchUpInside" id="nYg-q5-kmf"/>
-                                    <segue destination="n2f-jX-8T0" kind="presentation" identifier="login2MainScreenSegue" modalPresentationStyle="fullScreen" id="KvT-l7-Vy8"/>
+                                    <segue destination="8tz-ke-u42" kind="popoverPresentation" identifier="sendLoginDataSegue" popoverAnchorView="NDL-uJ-q9O" id="rah-JH-Bho">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -977,7 +962,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dln-dz-jxb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3400.7633587786258" y="-87.323943661971839"/>
+            <point key="canvasLocation" x="4271" y="-87"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Idi-wp-Fs4">
@@ -1592,9 +1577,52 @@
             </objects>
             <point key="canvasLocation" x="9359.5419847328249" y="368.3098591549296"/>
         </scene>
+        <!--Route To Main View Controller-->
+        <scene sceneID="kXG-sO-G3M">
+            <objects>
+                <viewController id="8tz-ke-u42" customClass="RouteToMainViewController" customModule="BlurApp_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uuL-tB-KfM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GM0-Jf-Wqy">
+                                <rect key="frame" x="91" y="126" width="210" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendExa-ExtraBold" family="Lexend Exa" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Göremedikleriniz..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maA-0Y-bFZ">
+                                <rect key="frame" x="112" y="192" width="167" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yönlendiriliyorsunuz..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bld-Rg-PyU">
+                                <rect key="frame" x="41" y="390" width="307" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z2E-RA-PYM"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" style="editor" id="Lln-js-sbv"/>
+                    <connections>
+                        <segue destination="n2f-jX-8T0" kind="presentation" identifier="login2MainScreenSegue" modalPresentationStyle="fullScreen" id="bic-pH-iCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igA-CS-gwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3400.7633587786258" y="-87.323943661971839"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cCd-QJ-Jhq"/>
+        <segue reference="bic-pH-iCu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="berber" width="225" height="225"/>

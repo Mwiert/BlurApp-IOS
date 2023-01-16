@@ -17,9 +17,9 @@ public class userDefaultsOptions{
         }
     }
     
-    func saveRegisterUserInfo(userInfoLogin : mainUser){
+    func saveRegisterUserInfo(userInfoRegister : mainUser){
         let encoder = JSONEncoder()
-        if let encoded = try? encoder.encode(userInfoLogin) {
+        if let encoded = try? encoder.encode(userInfoRegister) {
             UserDefaults.standard.set(encoded, forKey: "userInfo")
         }
     }
