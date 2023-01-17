@@ -8,15 +8,15 @@
 import Foundation
 
 struct CoordinatesStruct : Codable{
-    let topLeftCorner : topLeft
-    let bottomRightCorner : bottomRight
+    let topLeft : lats
+    let bottomRight : lats
 }
 
-struct topLeft : Codable{
+/*struct topLeftC : Codable{
     let latitude : String
-    let longitde : String
-}
-struct bottomRight : Codable{
+    let longitude : String
+}*/
+struct lats : Codable{
     let latitude : String
-    let longitde : String
+    let longitude : String
 }

@@ -13,6 +13,32 @@ import Alamofire
 
 public class WorkplaceVM{
     
+    func nearestWPs()async throws{
+        /*
+         "topLeft": {
+                 "latitude": "20,23423",
+                 "longitude": "100,124"
+             },
+             "bottomRight": {
+                 "latitude": "50,234234",
+                 "longitude": "40,23423"
+             }
+         */
+
+        let myData = CoordinatesStruct(topLeft: lats.init(latitude: "20,23423", longitude: "100,124"), bottomRight: lats.init(latitude: "50,234234", longitude: "40,23423"))
+        
+        
+        
+       let request = AF.request(reqUrl().getnearestWorkPlacesUrl, method: .post, parameters: myData, encoder: JSONParameterEncoder.default, headers: apiService().reqHeaders).serializingDecodable([GetWorkplaces].self)
+        
+        switch await request.response.result{
+        case .success(let data):
+            print(data)
+        case .failure(let error):
+            print(error)
+        }
+    }
+    
     func createNewWorkplace(createNewWorkplace : createWorkplace){
         
         let professionParams : JSON = ["name":"\(createNewWorkplace.name!)",
@@ -62,23 +88,6 @@ public class WorkplaceVM{
                }
            })
      }
-    
-   /* func createProfession(/*professionName : String*/){
-        
-        let Name = "AHMETINAMK2"
-        
-        let professionName : JSON = ["nameOfProfession":"\(Name)"]
-        
-        AF.request(reqUrl().createProfessionUrl, method: .post ,parameters: json ,encoder: JSONParameterEncoder.default ,headers: apiService().headerWithToken()).responseString( completionHandler: { response in
-              switch response.result {
-              case .success(let data):
-            //responseData kullanılırsa bu fonksiyon ile structa ata    //  let myWorkplace = try? JSONDecoder().decode(fullWorkplace.self, from: data)
-                  let myData = data
-              case .failure(_):
-                  print(response.error?.localizedDescription)
-              }
-          })
-    }*/
     
     func getWorkplacesByCategory(){
     

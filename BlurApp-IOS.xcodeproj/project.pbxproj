@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DB252D392975B29000A11E03 /* RouteToMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB252D382975B29000A11E03 /* RouteToMainViewController.swift */; };
+		DB252D3B2975BBD300A11E03 /* RouteRegisterToMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */; };
+		DB252D3F29763AB500A11E03 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB252D3D29763AB500A11E03 /* CategoryCollectionViewCell.swift */; };
+		DB252D4029763AB500A11E03 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB252D3E29763AB500A11E03 /* CategoryCollectionViewCell.xib */; };
 		DB284F5029714DF200E3141E /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB284F4F29714DF200E3141E /* Coordinates.swift */; };
 		DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55359E296F7B7900F9C149 /* getWorkplaces.swift */; };
 		DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB648CED296619AA0010C54D /* DefaultStorage.swift */; };
@@ -68,6 +71,9 @@
 
 /* Begin PBXFileReference section */
 		DB252D382975B29000A11E03 /* RouteToMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToMainViewController.swift; sourceTree = "<group>"; };
+		DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRegisterToMainViewController.swift; sourceTree = "<group>"; };
+		DB252D3D29763AB500A11E03 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		DB252D3E29763AB500A11E03 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		DB284F4F29714DF200E3141E /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		DB55359E296F7B7900F9C149 /* getWorkplaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getWorkplaces.swift; sourceTree = "<group>"; };
 		DB648CED296619AA0010C54D /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
@@ -138,6 +144,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB252D3C29763A7600A11E03 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				DB252D3D29763AB500A11E03 /* CategoryCollectionViewCell.swift */,
+				DB252D3E29763AB500A11E03 /* CategoryCollectionViewCell.xib */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
 		DB648CEC296619780010C54D /* Privacy */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +267,7 @@
 		DBF57121295A9389009F2DA8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB252D3C29763A7600A11E03 /* ViewComponents */,
 				DBF57124295A93B6009F2DA8 /* LocationMapViewController.swift */,
 				DBF57126295A93C8009F2DA8 /* LoginViewController.swift */,
 				DBF57128295A93D0009F2DA8 /* MainViewController.swift */,
@@ -263,6 +279,7 @@
 				DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */,
 				DB795F142970B9ED00A909B6 /* ViewController.swift */,
 				DB252D382975B29000A11E03 /* RouteToMainViewController.swift */,
+				DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,6 +442,7 @@
 				DBBC24E5295A9AD800CC6A7C /* LexendDeca-Bold.ttf in Resources */,
 				DBF570F7295A933E009F2DA8 /* Assets.xcassets in Resources */,
 				DBF570F2295A933D009F2DA8 /* Main.storyboard in Resources */,
+				DB252D4029763AB500A11E03 /* CategoryCollectionViewCell.xib in Resources */,
 				DBBC24E2295A9AD800CC6A7C /* LexendExa-ExtraBold.ttf in Resources */,
 				DBBC24E6295A9AD800CC6A7C /* LexendDeca-Regular.ttf in Resources */,
 				DBBC24E3295A9AD800CC6A7C /* LexendDeca-Light.ttf in Resources */,
@@ -464,12 +482,14 @@
 				DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */,
 				DBF570F5295A933D009F2DA8 /* BlurApp_IOS.xcdatamodeld in Sources */,
 				DBF5712B295A93D8009F2DA8 /* OpeningViewController.swift in Sources */,
+				DB252D3F29763AB500A11E03 /* CategoryCollectionViewCell.swift in Sources */,
 				DBE84F87295E46AF00B1F26F /* RegisterViewModel.swift in Sources */,
 				DBE84F85295E469900B1F26F /* LoginViewModel.swift in Sources */,
 				DBF570EB295A933D009F2DA8 /* AppDelegate.swift in Sources */,
 				DBF57129295A93D0009F2DA8 /* MainViewController.swift in Sources */,
 				DBE84F89295E46BA00B1F26F /* VerificationViewModel.swift in Sources */,
 				DBF57127295A93C8009F2DA8 /* LoginViewController.swift in Sources */,
+				DB252D3B2975BBD300A11E03 /* RouteRegisterToMainViewController.swift in Sources */,
 				DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */,
 				DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */,
 				DB284F5029714DF200E3141E /* Coordinates.swift in Sources */,

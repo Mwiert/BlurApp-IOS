@@ -17,12 +17,15 @@ class RouteToMainViewController: UIViewController {
 
         Task{
             let info = try await userLoginVM().userLoginReq(Email: userEmailVerify, Password: userPasswordVerify)
-            print(info)
+            
             if(info == false){
                 let alert = UIAlertController(title: "Hata!", message: "Hatalı eposta veya şifre girdiniz. Lütfen tekrar deneyiniz.", preferredStyle:UIAlertController.Style.alert)
-                self.present(alert, animated: true, completion: nil)
                 let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default)
                 alert.addAction(okButton)
+                self.present(alert, animated: true) {
+                    self.presentingViewController?.dismiss(animated: true)
+                }
+
             }
             else {
                 self.performSegue(withIdentifier: "login2MainScreenSegue", sender: (Any).self)
