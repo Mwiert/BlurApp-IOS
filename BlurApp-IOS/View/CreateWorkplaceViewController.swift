@@ -32,7 +32,9 @@ class CreateWorkplaceViewController: UIViewController, MKMapViewDelegate, CLLoca
         gestureRecognizer.minimumPressDuration = 1.5
         professionCreatedLocation.addGestureRecognizer(gestureRecognizer)
         // Do any additional setup after loading the view.
+    
     }
+
     
     @objc func chooseLocation(gestureRecognizer : UILongPressGestureRecognizer){
         if (gestureRecognizer.state == .began){
@@ -57,14 +59,7 @@ class CreateWorkplaceViewController: UIViewController, MKMapViewDelegate, CLLoca
         professionCreatedLocation?.setRegion(region, animated: true)
         
     }
-    
-    @IBAction func denemeBtn(_ sender: Any) {
-      //  let deneme = WorkplaceVM().getWorkplacesByCategory()
-    //    let meslekEkle =  WorkplaceVM().createProfession()
-    }
-    
-    
-    
+
     
     @IBAction func btnCreateProfessionClicked(_ sender: Any) {
         if(professionNameText.text!.isEmpty || professionKindNameText.text!.isEmpty || professionLatitudeText.text!.isEmpty || professionLongitudeText.text!.isEmpty

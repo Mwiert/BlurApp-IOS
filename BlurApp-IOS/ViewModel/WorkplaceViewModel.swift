@@ -14,17 +14,6 @@ import Alamofire
 public class WorkplaceVM{
     
     func nearestWPs()async throws{
-        /*
-         "topLeft": {
-                 "latitude": "20,23423",
-                 "longitude": "100,124"
-             },
-             "bottomRight": {
-                 "latitude": "50,234234",
-                 "longitude": "40,23423"
-             }
-         */
-
         let myData = CoordinatesStruct(topLeft: lats.init(latitude: "20,23423", longitude: "100,124"), bottomRight: lats.init(latitude: "50,234234", longitude: "40,23423"))
         
         
@@ -59,7 +48,19 @@ public class WorkplaceVM{
         
         
     }
-    
+    func getAllProfessionsAsync() async throws -> [professionInfo]{
+        var returnFail : [professionInfo] = []
+        let request = AF.request(reqUrl().getallProfessionsUrl, method: .get, headers: apiService().reqHeaders).serializingDecodable([professionInfo].self)
+        
+        
+        switch await request.response.result {
+                  case .success(let data):
+                      return data
+                  case .failure(let error):
+                      print(error.localizedDescription)
+            return returnFail
+                  }
+              }
     func getAllProfessions(){
         
         AF.request(reqUrl().getallProfessionsUrl, method: .get, headers: apiService().reqHeaders).responseDecodable(of: [professionInfo].self,completionHandler: { response in
@@ -81,26 +82,23 @@ public class WorkplaceVM{
         AF.request(reqUrl().createSingleProfessionUrl, method: .post ,parameters: professionName1 ,encoder: JSONParameterEncoder.default ,headers: apiService().headerWithToken()).responseDecodable(of: [professionInfo].self, completionHandler: { response in
                switch response.result {
                case .success(let data):
-             //responseData kullanılırsa bu fonksiyon ile structa ata    //  let myWorkplace = try? JSONDecoder().decode(fullWorkplace.self, from: data)
                    let myData = data
                case .failure(_):
                    print(response.error?.localizedDescription)
                }
            })
      }
-    
-    func getWorkplacesByCategory(){
-    
-        AF.request(reqUrl().getallWorkplacesUrl, method: .get, headers: apiService().headerWithToken()).responseDecodable(of: [GetWorkplaces].self ,completionHandler: { response in
-                  switch response.result {
-                  case .success(let data):
-                //responseData kullanılırsa bu fonksiyon ile structa ata    //let myWorkplaces = try? JSONDecoder().decode(fullWorkplace.self, from: data)
-                      
-                      print(data)
-                  case .failure(_):
-                      print(response.error?.localizedDescription)
-                  }
-              }
-        )
+    func getWorkplaces1(completion: @escaping ([Workplace]) -> Void) {
+        AF.request(reqUrl().getallWorkplacesUrl, method: .get, headers: apiService().headerWithToken())
+            .responseDecodable(of: [Workplace].self) { response in
+                switch response.result {
+                    case .success(let data):
+                        completion(data)
+                    case .failure(let error):
+                        print(error)
+                        print(response.data)
+                }
+            }
     }
+
 }

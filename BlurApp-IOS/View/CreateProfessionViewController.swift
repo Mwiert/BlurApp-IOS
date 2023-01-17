@@ -16,11 +16,6 @@ class CreateProfessionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func btn(_ sender: Any) {
-        WorkplaceVM().getAllProfessions()
-        
-    }
     @IBAction func btnCreateProfessionClicked(_ sender: Any) {
         if(professionNameText.text!.isEmpty){
             let alert = UIAlertController(title: "Hata!", message: "Lütfen boş alanları doldurunuz.", preferredStyle:UIAlertController.Style.alert)

@@ -25,6 +25,32 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        Task{
+            WorkplaceVM().getWorkplaces1 { locationWps in
+                for wpLocations in locationWps{
+                    let annotation = MKPointAnnotation()
+                    annotation.title = wpLocations.name
+                    
+                    let tempLat = wpLocations.location.latitude.replacingOccurrences(of: ",", with: ".")
+                    let tempLong = wpLocations.location.longitude.replacingOccurrences(of: ",", with: ".")
+                    
+                    let annotatonlatitude : Double = Double(tempLat)!
+                    let annotationlongitude: Double = Double(tempLong)!
+
+                    
+                    let locations = CLLocationCoordinate2D(latitude: annotatonlatitude, longitude: annotationlongitude)
+                    annotation.coordinate = locations
+                    self.mapView.addAnnotation(annotation)
+                }
+            }
+            
+
+        }
     }
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)

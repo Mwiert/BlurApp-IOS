@@ -32,4 +32,12 @@ getUserInfo()
         usersPhoneNumberText.text = "Yakında gerekecek"
         usersAdressText.text = userAdress
     }
+    
+    @IBAction func btnLogout(_ sender: Any) {
+        userVM().userLogout()
+        performSegue(withIdentifier: "logoutSegue", sender: nil)
+    }
+    
+    
+    
 }

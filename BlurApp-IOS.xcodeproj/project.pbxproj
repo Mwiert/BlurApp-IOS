@@ -50,6 +50,7 @@
 		DBF5712D295A93E3009F2DA8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5712C295A93E3009F2DA8 /* ProfileViewController.swift */; };
 		DBF57130295A93F6009F2DA8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF5712F295A93F6009F2DA8 /* RegisterViewController.swift */; };
 		DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF57131295A9400009F2DA8 /* VerificationViewController.swift */; };
+		DBFFFAFE29764C00005A4AEC /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFFFAFD29764C00005A4AEC /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		DBF5712C295A93E3009F2DA8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DBF5712F295A93F6009F2DA8 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DBF57131295A9400009F2DA8 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
+		DBFFFAFD29764C00005A4AEC /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 				DBE84F86295E46AF00B1F26F /* RegisterViewModel.swift */,
 				DBE84F88295E46BA00B1F26F /* VerificationViewModel.swift */,
 				DBB412C2296DAB4100FD3D22 /* WorkplaceViewModel.swift */,
+				DBFFFAFD29764C00005A4AEC /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB252D392975B29000A11E03 /* RouteToMainViewController.swift in Sources */,
+				DBFFFAFE29764C00005A4AEC /* UserViewModel.swift in Sources */,
 				DBB412C5296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift in Sources */,
 				DBBC24ED295B316900CC6A7C /* User.swift in Sources */,
 				DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */,
