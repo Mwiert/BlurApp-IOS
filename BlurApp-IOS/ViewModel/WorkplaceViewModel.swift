@@ -66,8 +66,7 @@ public class WorkplaceVM{
         AF.request(reqUrl().getallProfessionsUrl, method: .get, headers: apiService().reqHeaders).responseDecodable(of: [professionInfo].self,completionHandler: { response in
                   switch response.result {
                   case .success(let data):
-                //responseData kullanılırsa bu fonksiyon ile structa ata    //let getAllProfessionlist = try? JSONDecoder().decode([professionInfoString].self, from: data)
-                      
+                      dataStorage().saveProfessions(professions: data)
                       print(data)
                   case .failure(_):
                       print(response.error?.localizedDescription)

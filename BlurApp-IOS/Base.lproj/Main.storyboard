@@ -306,116 +306,6 @@
             </objects>
             <point key="canvasLocation" x="7309.160305343511" y="-275.35211267605638"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EcA-1Y-M6P">
-            <objects>
-                <viewController id="oOp-tG-AmR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="EhU-23-Eks">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s2G-hN-fZL">
-                                <rect key="frame" x="0.0" y="17" width="393" height="771"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uCp-5s-Hh4">
-                                    <size key="itemSize" width="386" height="124"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QyF-C2-Smd">
-                                        <rect key="frame" x="3.6666666666666665" y="0.0" width="386" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9mM-bu-aJh">
-                                            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.69559693570000003" green="0.63069374860000005" blue="0.2396751319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <size key="customSize" width="386" height="124"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PUF-sr-KKa">
-                                        <rect key="frame" x="3.6666666666666665" y="134" width="386" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NSJ-f1-fBH">
-                                            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                        <size key="customSize" width="386" height="124"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Uyp-04-yV9">
-                                        <rect key="frame" x="3.6666666666666665" y="268" width="386" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Nh-6E-u6D">
-                                            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                                        <size key="customSize" width="386" height="124"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1HK-G9-pW3">
-                                        <rect key="frame" x="3.6666666666666665" y="402" width="386" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Awy-gz-Yiv">
-                                            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <size key="customSize" width="386" height="124"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hFU-FX-s2T">
-                                        <rect key="frame" x="3.6666666666666665" y="536" width="386" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hTi-a7-oGP">
-                                            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <size key="customSize" width="386" height="124"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TtB-an-ly1">
-                                        <rect key="frame" x="3.6666666666666665" y="670" width="386" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ai5-Ug-XkK">
-                                            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <size key="customSize" width="386" height="124"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8xN-i5-8zd">
-                                        <rect key="frame" x="3.6666666666666665" y="804" width="386" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="mVB-kh-TXn">
-                                            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                                        <size key="customSize" width="386" height="124"/>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dRb-tL-YK1">
-                                        <rect key="frame" x="3.6666666666666665" y="938" width="386" height="124"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="lM8-BR-Gz7">
-                                            <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <size key="customSize" width="386" height="124"/>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2NR-q1-Ng3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ysH-vy-a5B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8262" y="-275"/>
-        </scene>
         <!--Location Map View Controller-->
         <scene sceneID="lMc-ei-GIQ">
             <objects>
@@ -436,6 +326,7 @@
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bgt-pn-pPu">
                                 <rect key="frame" x="0.0" y="143" width="393" height="603"/>
+                                <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <imageryMapConfiguration key="preferredConfiguration" elevationStyle="realistic"/>
                             </mapView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-it-khj">
@@ -443,6 +334,46 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xSA-Zc-3pN">
+                                <rect key="frame" x="0.0" y="140" width="71" height="606"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mpe-HM-Emj">
+                                    <size key="itemSize" width="62" height="76"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfessionListCollectionViewCell" id="vCb-bk-I87" customClass="ProfessionListCollectionViewCell" customModule="BlurApp_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="4.666666666666667" y="0.0" width="62" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="16c-lh-T85">
+                                            <rect key="frame" x="0.0" y="0.0" width="62" height="76"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhk-FQ-mgG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="62" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" white="1" alpha="0.94929245279999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="7"/>
+                                                    <color key="textColor" white="1" alpha="0.94929245279999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapTemp" translatesAutoresizingMaskIntoConstraints="NO" id="PC4-YK-lPb">
+                                                    <rect key="frame" x="0.0" y="17" width="62" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="62" height="76"/>
+                                        <connections>
+                                            <outlet property="professionİmage" destination="PC4-YK-lPb" id="SSr-a7-8om"/>
+                                            <outlet property="professionName" destination="xhk-FQ-mgG" id="nqt-Ch-Yqj"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pyo-kM-ozA"/>
                         <color key="backgroundColor" red="0.33725491169999999" green="0.74117654560000001" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -464,6 +395,7 @@
                     <navigationItem key="navigationItem" id="BXa-w7-AMq"/>
                     <connections>
                         <outlet property="MapView" destination="Bgt-pn-pPu" id="6Qn-OK-PAc"/>
+                        <outlet property="professionsCollectionView" destination="xSA-Zc-3pN" id="znm-vg-Em0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEG-61-BvS" sceneMemberID="firstResponder"/>
@@ -942,10 +874,10 @@
             </objects>
             <point key="canvasLocation" x="6324" y="-275"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Admin Profile View Controller-->
         <scene sceneID="Cd9-gJ-BF6">
             <objects>
-                <viewController id="fZy-as-ec6" customClass="ProfileViewController" customModule="BlurApp_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fZy-as-ec6" customClass="AdminProfileViewController" customModule="BlurApp_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9pv-VY-sqx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1074,13 +1006,6 @@
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yeni konum belirtin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh7-Af-GvV">
-                                        <rect key="frame" x="65" y="298" width="112" height="15"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Konum kaldır" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkK-Lw-Wzl">
                                         <rect key="frame" x="65" y="358" width="77" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1106,13 +1031,6 @@
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yakında kullanıma açılacak" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK4-PW-hrC">
-                                        <rect key="frame" x="242" y="284" width="111" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="11"/>
-                                        <color key="textColor" red="0.69559693570000003" green="0.67230246230000001" blue="0.68728062229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kuk-W7-new">
                                         <rect key="frame" x="0.0" y="543" width="361" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1140,6 +1058,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="btnLogout:" destination="f9z-B9-Oqw" eventType="touchUpInside" id="kLf-LO-x8G"/>
+                                            <action selector="logout:" destination="fZy-as-ec6" eventType="touchUpInside" id="0WG-Ew-a2y"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yakında kullanıma açılacak" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmL-Um-aoA">
@@ -1149,6 +1068,18 @@
                                         <color key="textColor" red="0.69559693570000003" green="0.67230246230000001" blue="0.68728062229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFn-2o-4UR">
+                                        <rect key="frame" x="15" y="287" width="281" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="            Yeni konum ekle">
+                                            <fontDescription key="titleFontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="u6i-ye-TKk" kind="show" id="Kf4-2d-FNw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -1162,10 +1093,15 @@
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="M1I-aY-NTz"/>
+                    <connections>
+                        <outlet property="emailLbl" destination="mpO-tK-W0t" id="sQZ-NK-cuq"/>
+                        <outlet property="nameLbl" destination="6uV-oE-4rM" id="IT9-3V-gcz"/>
+                        <outlet property="phoneLbl" destination="JUT-u2-IJ5" id="03A-7G-HZC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dln-dz-jxb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4271" y="-87"/>
+            <point key="canvasLocation" x="4270.9923664122134" y="-87.323943661971839"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Idi-wp-Fs4">
@@ -1390,7 +1326,7 @@
                                             <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="u6i-ye-TKk" kind="presentation" id="NE1-Zu-RUy"/>
+                                            <segue destination="0zo-3Z-KQz" kind="presentation" id="KWW-LS-Cpd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1569,7 +1505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3G-zy-q1m" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9422" y="1132"/>
+            <point key="canvasLocation" x="3517" y="-1566"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QGF-pY-any">
@@ -1671,7 +1607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXn-Or-exF" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8355" y="1132"/>
+            <point key="canvasLocation" x="4236" y="-894"/>
         </scene>
         <!--Create Profession View Controller-->
         <scene sceneID="IH9-df-ELw">
@@ -1782,7 +1718,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJN-m9-YRh" sceneMemberID="firstResponder"/>
                 <exit id="nCt-ra-Nmh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="9459" y="456"/>
+            <point key="canvasLocation" x="5011" y="-1566"/>
         </scene>
         <!--Route To Main View Controller-->
         <scene sceneID="kXG-sO-G3M">
@@ -1821,6 +1757,7 @@
                     <navigationItem key="navigationItem" style="editor" id="Lln-js-sbv"/>
                     <connections>
                         <segue destination="n2f-jX-8T0" kind="presentation" identifier="login2MainScreenSegue" modalPresentationStyle="fullScreen" id="bic-pH-iCu"/>
+                        <segue destination="fZy-as-ec6" kind="presentation" identifier="login2AdminScreenSegue" modalPresentationStyle="fullScreen" id="7Ju-L3-MCy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igA-CS-gwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1870,10 +1807,168 @@
             </objects>
             <point key="canvasLocation" x="3401" y="606"/>
         </scene>
+        <!--User Workplace Request View Controller-->
+        <scene sceneID="sxy-D7-Pip">
+            <objects>
+                <viewController id="0zo-3Z-KQz" customClass="UserWorkplaceRequestViewController" customModule="BlurApp_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q0r-0g-dZl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sye-LS-Xlt">
+                                <rect key="frame" x="0.0" y="788" width="392" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOC-55-SzY">
+                                <rect key="frame" x="0.0" y="788" width="392" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vhp-eu-Y7K">
+                                <rect key="frame" x="7" y="128" width="381" height="652"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İş yeri ekleme isteği gönder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BM-g1-4Fc">
+                                        <rect key="frame" x="9" y="8" width="352" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkL-vf-BEh">
+                                        <rect key="frame" x="0.0" y="55" width="361" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İş yeri adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEV-KJ-0tY">
+                                        <rect key="frame" x="8" y="86" width="353" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Meslek türü" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8aM-i4-Cmx">
+                                        <rect key="frame" x="8" y="154" width="353" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İş yeri adını giriniz." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaJ-r2-eMU">
+                                        <rect key="frame" x="9" y="64" width="115" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Light" family="Lexend Deca" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İş yeri'nin mesleğini giriniz." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UE2-qC-Xw6">
+                                        <rect key="frame" x="9" y="133" width="164" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Light" family="Lexend Deca" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enlem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0aX-H0-IqH">
+                                        <rect key="frame" x="75" y="214" width="98" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enlem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InF-nz-fSd">
+                                        <rect key="frame" x="20" y="223" width="38" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Light" family="Lexend Deca" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Boylam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-BQ-OMR">
+                                        <rect key="frame" x="256" y="213" width="98" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Boylam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0J-PI-vUw">
+                                        <rect key="frame" x="201" y="222" width="47" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Light" family="Lexend Deca" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojY-eH-Zb7">
+                                        <rect key="frame" x="0.0" y="338" width="361" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İş yeri'nin haritada görünümü" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37I-a7-6eL">
+                                        <rect key="frame" x="50" y="337" width="280" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozo-AO-6pC">
+                                        <rect key="frame" x="120" y="273" width="140" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Gönder" cornerStyle="large">
+                                            <fontDescription key="titleFontDescription" name="LexendDeca-SemiBold" family="Lexend Deca" pointSize="18"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnCreateProfessionClicked:" destination="0zo-3Z-KQz" eventType="touchUpInside" id="2XZ-xs-cbX"/>
+                                        </connections>
+                                    </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-Es-f4f">
+                                        <rect key="frame" x="8" y="384" width="364" height="251"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <standardMapConfiguration key="preferredConfiguration"/>
+                                    </mapView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gol-29-Bvz">
+                                <rect key="frame" x="93" y="40" width="210" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendExa-ExtraBold" family="Lexend Exa" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQW-R8-Q2s">
+                                <rect key="frame" x="0.0" y="110" width="392" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUu-gg-j5Z">
+                                <rect key="frame" x="0.0" y="110" width="392" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ie7-M9-6j8"/>
+                        <color key="backgroundColor" red="0.33725491169999999" green="0.74117654560000001" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="person.fill" catalog="system" id="P2k-IY-2Jl">
+                        <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="Knf-jG-JoP"/>
+                    <connections>
+                        <outlet property="professionCreatedLocation" destination="Zgb-Es-f4f" id="OoL-1A-2kt"/>
+                        <outlet property="professionKindNameText" destination="8aM-i4-Cmx" id="eAm-NT-cN3"/>
+                        <outlet property="professionLatitudeText" destination="0aX-H0-IqH" id="jUQ-U6-Ic2"/>
+                        <outlet property="professionLongitudeText" destination="0aQ-BQ-OMR" id="4aL-Q1-4Qn"/>
+                        <outlet property="professionNameText" destination="hEV-KJ-0tY" id="c5n-Sa-QIG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhI-Lq-9iV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8383.9694656488555" y="1131.6901408450706"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Wzc-d3-bEs"/>
-        <segue reference="cCd-QJ-Jhq"/>
+        <segue reference="bic-pH-iCu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="door.left.hand.open" catalog="system" width="108" height="128"/>
@@ -1894,18 +1989,6 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

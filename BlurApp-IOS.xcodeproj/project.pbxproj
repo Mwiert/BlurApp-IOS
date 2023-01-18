@@ -14,6 +14,9 @@
 		DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB648CED296619AA0010C54D /* DefaultStorage.swift */; };
 		DB67A49329655D7C005AD138 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49229655D7C005AD138 /* Alamofire */; };
 		DB67A49C2965A3E1005AD138 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = DB67A49B2965A3E1005AD138 /* SwiftyJSON */; };
+		DB77984F2978660E00701833 /* UserWorkplaceRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77984E2978660E00701833 /* UserWorkplaceRequestViewController.swift */; };
+		DB7798512978685700701833 /* AdminProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7798502978685700701833 /* AdminProfileViewController.swift */; };
+		DB77985329786DF200701833 /* ProfessionListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77985229786DF200701833 /* ProfessionListCollectionViewCell.swift */; };
 		DB795F132970B5DF00A909B6 /* CreateProfessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */; };
 		DB795F152970B9ED00A909B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB795F142970B9ED00A909B6 /* ViewController.swift */; };
 		DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11C295D236900AEB617 /* Workplace.swift */; };
@@ -76,6 +79,9 @@
 		DB284F4F29714DF200E3141E /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		DB55359E296F7B7900F9C149 /* getWorkplaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getWorkplaces.swift; sourceTree = "<group>"; };
 		DB648CED296619AA0010C54D /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
+		DB77984E2978660E00701833 /* UserWorkplaceRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWorkplaceRequestViewController.swift; sourceTree = "<group>"; };
+		DB7798502978685700701833 /* AdminProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileViewController.swift; sourceTree = "<group>"; };
+		DB77985229786DF200701833 /* ProfessionListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionListCollectionViewCell.swift; sourceTree = "<group>"; };
 		DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfessionViewController.swift; sourceTree = "<group>"; };
 		DB795F142970B9ED00A909B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB8AC11C295D236900AEB617 /* Workplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				DB980544297789270072AFF0 /* workplacesCollectionViewCell.swift */,
+				DB77985229786DF200701833 /* ProfessionListCollectionViewCell.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -282,6 +289,8 @@
 				DB795F142970B9ED00A909B6 /* ViewController.swift */,
 				DB252D382975B29000A11E03 /* RouteToMainViewController.swift */,
 				DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */,
+				DB77984E2978660E00701833 /* UserWorkplaceRequestViewController.swift */,
+				DB7798502978685700701833 /* AdminProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -472,6 +481,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB77984F2978660E00701833 /* UserWorkplaceRequestViewController.swift in Sources */,
 				DB252D392975B29000A11E03 /* RouteToMainViewController.swift in Sources */,
 				DB980545297789270072AFF0 /* workplacesCollectionViewCell.swift in Sources */,
 				DBFFFAFE29764C00005A4AEC /* UserViewModel.swift in Sources */,
@@ -479,9 +489,11 @@
 				DBBC24ED295B316900CC6A7C /* User.swift in Sources */,
 				DBBC24E9295B314B00CC6A7C /* NavigationMapViewModel.swift in Sources */,
 				DB795F132970B5DF00A909B6 /* CreateProfessionViewController.swift in Sources */,
+				DB7798512978685700701833 /* AdminProfileViewController.swift in Sources */,
 				DB9805472977956D0072AFF0 /* dataStorage.swift in Sources */,
 				DBF57130295A93F6009F2DA8 /* RegisterViewController.swift in Sources */,
 				DBB412C3296DAB4100FD3D22 /* WorkplaceViewModel.swift in Sources */,
+				DB77985329786DF200701833 /* ProfessionListCollectionViewCell.swift in Sources */,
 				DB795F152970B9ED00A909B6 /* ViewController.swift in Sources */,
 				DBF57125295A93B6009F2DA8 /* LocationMapViewController.swift in Sources */,
 				DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */,

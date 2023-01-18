@@ -28,8 +28,18 @@ class RouteToMainViewController: UIViewController {
 
             }
             else {
-                self.performSegue(withIdentifier: "login2MainScreenSegue", sender: (Any).self)
+                let userDetails = userDefaultsOptions().getUserInfo()
+                if(userDetails.userType! == 0){
+                    self.performSegue(withIdentifier: "login2AdminScreenSegue", sender: (Any).self)
+                }
+                else if(userDetails.userType! == 1){
+                    self.performSegue(withIdentifier: "login2MainScreenSegue", sender: (Any).self)
+                }
+                else{
+                    // route to emplooye screen
+                }
             }
+            WorkplaceVM().getAllProfessions()
         }
     }
     

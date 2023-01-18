@@ -14,6 +14,9 @@ class LocationMapViewController: UIViewController, MKMapViewDelegate,CLLocationM
     var myFuncs : mapFuncs?
     var locationManager = CLLocationManager()
     
+    @IBOutlet weak var professionsCollectionView: UICollectionView!
+    
+    
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,10 @@ class LocationMapViewController: UIViewController, MKMapViewDelegate,CLLocationM
         locationManager.startUpdatingLocation()
     }
     override func viewWillAppear(_ animated: Bool) {
+        
+        professionsCollectionView.dataSource = self
+        professionsCollectionView.delegate = self
+        
         Task{
             WorkplaceVM().getWorkplaces1 { locationWps in
                 for wpLocations in locationWps{
@@ -50,5 +57,25 @@ class LocationMapViewController: UIViewController, MKMapViewDelegate,CLLocationM
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         let region = MKCoordinateRegion(center: userLocation, span: span)
         mapView?.setRegion(region, animated: true)
+    }
+}
+extension LocationMapViewController : UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let myData = dataStorage().getProfessions()
+        return myData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let profCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProfessionListCollectionViewCell", for: indexPath) as! ProfessionListCollectionViewCell
+        let myData = dataStorage().getProfessions()
+        profCell.setup(with: myData[indexPath.row])
+        
+        return profCell
+    }
+}
+extension LocationMapViewController : UICollectionViewDelegateFlowLayout{
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+        return CGSize(width: 62, height: 76)
     }
 }
