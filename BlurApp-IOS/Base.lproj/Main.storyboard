@@ -1059,6 +1059,7 @@
                                         <connections>
                                             <action selector="btnLogout:" destination="f9z-B9-Oqw" eventType="touchUpInside" id="kLf-LO-x8G"/>
                                             <action selector="logout:" destination="fZy-as-ec6" eventType="touchUpInside" id="0WG-Ew-a2y"/>
+                                            <segue destination="Uyp-yb-40i" kind="presentation" identifier="logoutSegue" modalPresentationStyle="fullScreen" id="DTa-Vz-Mqt"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yakında kullanıma açılacak" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmL-Um-aoA">
@@ -1967,7 +1968,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wzc-d3-bEs"/>
+        <segue reference="DTa-Vz-Mqt"/>
         <segue reference="bic-pH-iCu"/>
     </inferredMetricsTieBreakers>
     <resources>
