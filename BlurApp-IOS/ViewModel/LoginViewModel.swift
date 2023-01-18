@@ -13,7 +13,7 @@ class userLoginVM: ObservableObject{
     func userLoginReq(Email: String, Password: String) async throws -> Bool{
         
         let paramJson : JSON = ["email":"\(Email)","password":"\(Password)"]
-        let returnNil = userProps(id: ids(timestamp: 1, machine: 1, pid: 1, increment: 1, creationTime: ""), email: "", password: "", name: "", surname:"", token: "", tokenExpiresIn: "")
+        let returnNil = userProps(id: ids(timestamp: 1, machine: 1, pid: 1, increment: 1, creationTime: ""), email: "", password: "", name: "", surname:"", token: "", tokenExpiresIn: "",userType: 3)
         
         let request = AF.request(reqUrl().loginUrl,method: .post,parameters: paramJson,encoder: JSONParameterEncoder.default,headers: apiService().reqHeaders).serializingDecodable(userProps.self)
     
@@ -21,7 +21,8 @@ class userLoginVM: ObservableObject{
         case .success(let data):
             userDefaultsOptions().saveLoginUserInfo(userInfoLogin: data)
             return true
-        case .failure(let _):
+        case .failure(let error):
+            print(error.localizedDescription)
             userDefaultsOptions().userLogout()
             return false
         }

@@ -19,6 +19,7 @@ struct userProps : Codable {
     let surname : String?
     let token : String?
     let tokenExpiresIn : String?
+    let userType : Int?
 }
 
 struct ids: Codable{

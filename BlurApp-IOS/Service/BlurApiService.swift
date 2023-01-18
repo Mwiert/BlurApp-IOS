@@ -33,10 +33,10 @@ public class apiService{
 enum requestPaths : String {
     case userLoginPath = "api/home/login/" // method : POST
     case userRegisterPath = "api/home/createaccount/" // method POST
-    case createWorkplace = "api/user/createworkplace/" // method POST
+    case createWorkplace = "api/admin/createworkplace/" // method POST
     case getallWorkplaces = "api/user/getallworkplaces/" // method GET
-    case createProfession = "api/user/createprofession/" // method POST
-    case createSingleProfession = "api/user/createsingleprofession/" // method POST
+    case createProfession = "api/admin/createprofession/" // method POST
+    case createSingleProfession = "api/admin/createsingleprofession/" // method POST
     case getallProfessions = "api/user/getallprofessions/" // method GET
     case getnearestWorkPlaces = "api/user/getnearestworkplaces/" // method POST
 }

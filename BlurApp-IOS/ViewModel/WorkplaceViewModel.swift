@@ -93,6 +93,7 @@ public class WorkplaceVM{
             .responseDecodable(of: [Workplace].self) { response in
                 switch response.result {
                     case .success(let data):
+                    dataStorage().saveWorkplaceList(workplaces: data)
                         completion(data)
                     case .failure(let error):
                         print(error)

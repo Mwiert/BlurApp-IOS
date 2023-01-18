@@ -219,91 +219,46 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Wf-mT-OI7">
-                                                            <size key="itemSize" width="386" height="124"/>
+                                                            <size key="itemSize" width="389" height="75"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Zu-BE-01o">
-                                                                <rect key="frame" x="3.6666666666666665" y="0.0" width="386" height="124"/>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="workplacesCollectionViewCell" id="4Zu-BE-01o" customClass="workplacesCollectionViewCell" customModule="BlurApp_IOS" customModuleProvider="target">
+                                                                <rect key="frame" x="2" y="0.0" width="389" height="75"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p0q-JL-E1k">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="389" height="75"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7f-V9-g9H">
+                                                                            <rect key="frame" x="142" y="8" width="113" height="59"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uzaklık" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsl-p5-GDN">
+                                                                            <rect key="frame" x="278" y="27" width="88" height="21"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapTemp" translatesAutoresizingMaskIntoConstraints="NO" id="vHC-6e-dPA">
+                                                                            <rect key="frame" x="2" y="5" width="128" height="64"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        </imageView>
+                                                                    </subviews>
                                                                 </collectionViewCellContentView>
-                                                                <color key="backgroundColor" red="0.69559693570000003" green="0.63069374860000005" blue="0.2396751319" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <size key="customSize" width="386" height="124"/>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1fn-6S-U7l">
-                                                                <rect key="frame" x="3.6666666666666665" y="134" width="386" height="124"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VRq-Y5-PPl">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                                <color key="backgroundColor" systemColor="systemCyanColor"/>
-                                                                <size key="customSize" width="386" height="124"/>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6dq-02-5dD">
-                                                                <rect key="frame" x="3.6666666666666665" y="268" width="386" height="124"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="stO-wf-Vl6">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                                                                <size key="customSize" width="386" height="124"/>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MqF-uo-GLw">
-                                                                <rect key="frame" x="3.6666666666666665" y="402" width="386" height="124"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aa3-yv-4jE">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                                                <size key="customSize" width="386" height="124"/>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FDD-Xa-a2v">
-                                                                <rect key="frame" x="3.6666666666666665" y="536" width="386" height="124"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v2s-pU-3c7">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                                                <size key="customSize" width="386" height="124"/>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bMh-hq-iIO">
-                                                                <rect key="frame" x="3.6666666666666665" y="670" width="386" height="124"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vEz-KM-1oA">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                                                <size key="customSize" width="386" height="124"/>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="et4-99-vlb">
-                                                                <rect key="frame" x="3.6666666666666665" y="804" width="386" height="124"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="ihY-Lp-v01">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
-                                                                <size key="customSize" width="386" height="124"/>
-                                                            </collectionViewCell>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="64p-Fs-jQq">
-                                                                <rect key="frame" x="3.6666666666666665" y="938" width="386" height="124"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="7cw-fa-vgb">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="386" height="124"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                </collectionViewCellContentView>
-                                                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                                                <size key="customSize" width="386" height="124"/>
+                                                                <color key="backgroundColor" red="0.33725491169999999" green="0.74117654560000001" blue="0.59607845540000004" alpha="0.40394064465408808" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <size key="customSize" width="389" height="75"/>
+                                                                <connections>
+                                                                    <outlet property="distanceLabel" destination="xsl-p5-GDN" id="EFl-ps-P7m"/>
+                                                                    <outlet property="workplacesImage" destination="vHC-6e-dPA" id="Oyl-yJ-EiS"/>
+                                                                    <outlet property="workplacesNameLabel" destination="r7f-V9-g9H" id="muD-ln-H8I"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -344,6 +299,7 @@
                     <connections>
                         <outlet property="btnUserAdress" destination="u2F-vK-7fo" id="FU3-W9-LOe"/>
                         <outlet property="mapView" destination="qDr-IG-x5B" id="urb-s7-eeV"/>
+                        <outlet property="workplacesColletionView" destination="h6g-cG-2GT" id="AO3-UP-gwA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmd-JC-37H" sceneMemberID="firstResponder"/>
@@ -1132,13 +1088,6 @@
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Çıkış yap" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4e-TA-jrU">
-                                        <rect key="frame" x="60" y="562.66666666666663" width="52" height="15"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xb-FK-ied">
                                         <rect key="frame" x="296" y="109" width="57" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1176,6 +1125,25 @@
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yakında kullanıma açılacak" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgE-Kw-0Xc">
                                         <rect key="frame" x="242" y="340" width="111" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="11"/>
+                                        <color key="textColor" red="0.69559693570000003" green="0.67230246230000001" blue="0.68728062229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GA3-92-2fj">
+                                        <rect key="frame" x="47" y="551" width="198" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Çıkış yap">
+                                            <fontDescription key="titleFontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnLogout:" destination="f9z-B9-Oqw" eventType="touchUpInside" id="kLf-LO-x8G"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yakında kullanıma açılacak" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmL-Um-aoA">
+                                        <rect key="frame" x="248" y="224" width="111" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="11"/>
                                         <color key="textColor" red="0.69559693570000003" green="0.67230246230000001" blue="0.68728062229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1410,7 +1378,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="btnLogout:" destination="f9z-B9-Oqw" eventType="touchUpInside" id="PTs-RR-yL6"/>
-                                            <segue destination="Uyp-yb-40i" kind="show" identifier="logoutSegue" id="Wzc-d3-bEs"/>
+                                            <segue destination="Uyp-yb-40i" kind="presentation" identifier="logoutSegue" modalPresentationStyle="fullScreen" id="Wzc-d3-bEs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEV-zn-qMs">
@@ -1450,7 +1418,7 @@
             <objects>
                 <viewController id="jt3-M0-egs" customClass="CreateWorkplaceViewController" customModule="BlurApp_IOS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PFX-Nc-1po">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGM-dx-teP">
@@ -1647,7 +1615,7 @@
                                             <color key="baseBackgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="jt3-M0-egs" kind="presentation" modalPresentationStyle="fullScreen" id="lpU-XY-Jsh"/>
+                                            <segue destination="jt3-M0-egs" kind="show" id="lpU-XY-Jsh"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yapmak istediğiniz işlemi seçiniz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIJ-q3-li0">
@@ -1667,7 +1635,7 @@
                                             <color key="baseBackgroundColor" red="0.15686274510000001" green="0.74117647060000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="Nqg-Zc-XVG" kind="presentation" modalPresentationStyle="fullScreen" id="gEp-up-1VE"/>
+                                            <segue destination="Nqg-Zc-XVG" kind="show" id="gEp-up-1VE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1710,7 +1678,7 @@
             <objects>
                 <viewController id="Nqg-Zc-XVG" customClass="CreateProfessionViewController" customModule="BlurApp_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Rb-yh-Dgp">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JTu-fO-o0o">
@@ -1916,6 +1884,7 @@
         <image name="location.fill" catalog="system" width="128" height="119"/>
         <image name="mail.fill" catalog="system" width="128" height="93"/>
         <image name="map" catalog="system" width="128" height="112"/>
+        <image name="mapTemp" width="128" height="128"/>
         <image name="minus" catalog="system" width="128" height="26"/>
         <image name="pencil.line" catalog="system" width="128" height="98"/>
         <image name="person" catalog="system" width="128" height="121"/>

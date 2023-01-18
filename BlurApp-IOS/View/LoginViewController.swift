@@ -23,6 +23,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        WorkplaceVM().getWorkplaces1 { locationWps in
+        }
+        
         // Do any additional setup after loading the view."
     }
     
