@@ -13,6 +13,7 @@ class ProfessionListCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var professionİmage: UIImageView!
     
+    
     func setup(with profession : professionInfo){
         professionName.text = profession.nameOfProfession
         

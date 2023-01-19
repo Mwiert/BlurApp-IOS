@@ -12,9 +12,10 @@ class RouteToMainViewController: UIViewController {
     var userEmailVerify : String = ""
     var userPasswordVerify : String = ""
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         Task{
             let info = try await userLoginVM().userLoginReq(Email: userEmailVerify, Password: userPasswordVerify)
             
@@ -41,17 +42,7 @@ class RouteToMainViewController: UIViewController {
             }
             WorkplaceVM().getAllProfessions()
         }
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

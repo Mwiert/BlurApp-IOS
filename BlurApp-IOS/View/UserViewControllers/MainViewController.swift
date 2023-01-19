@@ -17,9 +17,11 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
     
     @IBOutlet weak var workplacesColletionView: UICollectionView!
     
+    
     @IBOutlet weak var mapView: MKMapView!
     
     var locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,35 +44,16 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
 
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        workplacesColletionView.dataSource = self
-        workplacesColletionView.delegate = self
-        
-        Task{
-            WorkplaceVM().getWorkplaces1 { locationWps in
-                for wpLocations in locationWps{
-                    let annotation = MKPointAnnotation()
-                    annotation.title = wpLocations.name
-                    
-                    let tempLat = wpLocations.location.latitude.replacingOccurrences(of: ",", with: ".")
-                    let tempLong = wpLocations.location.longitude.replacingOccurrences(of: ",", with: ".")
-                    
-                    let annotatonlatitude : Double = Double(tempLat)!
-                    let annotationlongitude: Double = Double(tempLong)!
-
-                    
-                    let locations = CLLocationCoordinate2D(latitude: annotatonlatitude, longitude: annotationlongitude)
-                    annotation.coordinate = locations
-                    self.mapView.addAnnotation(annotation)
-                }
-            }
-        }
-    }
-    
-
-    
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
+        
+        let latString = String(userLocation.latitude)
+        let longString = String(userLocation.longitude)
+        
+        let coords = lats (latitude: latString, longitude: longString)
+
+        
+        userDefaultsOptions().saveUsersLocationCoordinates(coordinates: coords)
         
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         let region = MKCoordinateRegion(center: userLocation, span: span)
@@ -99,6 +82,31 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
         mapView?.setRegion(region, animated: true)
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        workplacesColletionView.dataSource = self
+        workplacesColletionView.delegate = self
+        
+        Task{
+            WorkplaceVM().getWorkplaces1 { locationWps in
+                for wpLocations in locationWps{
+                    let annotation = MKPointAnnotation()
+                    annotation.title = wpLocations.name
+                    
+                    let tempLat = wpLocations.location.latitude.replacingOccurrences(of: ",", with: ".")
+                    let tempLong = wpLocations.location.longitude.replacingOccurrences(of: ",", with: ".")
+                    
+                    let annotatonlatitude : Double = Double(tempLat)!
+                    let annotationlongitude: Double = Double(tempLong)!
+
+                    
+                    let locations = CLLocationCoordinate2D(latitude: annotatonlatitude, longitude: annotationlongitude)
+                    annotation.coordinate = locations
+                    self.mapView.addAnnotation(annotation)
+                }
+            }
+        }
+    }
 }
 
 
@@ -114,6 +122,25 @@ extension MainViewController : UICollectionViewDataSource,UICollectionViewDelega
         let myData = dataStorage().getWorkplaces()
         workplaceCell.setup(with: myData[indexPath.row])
         
+        let userLocationCoords = userDefaultsOptions().getuserCoordinates()
+        
+        let latDouble = Double(userLocationCoords.latitude)
+        let longDouble = Double(userLocationCoords.longitude)
+        
+        let userLocationLat = myData[indexPath.item].location.latitude
+        let userLocationLong = myData[indexPath.item].location.longitude
+        
+        let useUserLatitude = Double(userLocationLat.replacingOccurrences(of: ",", with: "."))
+        let useUserLongitude = Double(userLocationLong.replacingOccurrences(of: ",", with: "."))
+        
+        let userLocation = CLLocation(latitude: latDouble!, longitude: longDouble!)
+        let specifiedPoint = CLLocation(latitude: useUserLatitude!, longitude: useUserLongitude!)
+        
+
+        let distanceInMeters = userLocation.distance(from: specifiedPoint)
+        
+        workplaceCell.distanceLabel.text! = String(format: "%.01f  metre uzakta!", distanceInMeters)
+        
         return workplaceCell
     }
 }
@@ -124,4 +151,3 @@ extension MainViewController : UICollectionViewDelegateFlowLayout{
     }
     
 }
-

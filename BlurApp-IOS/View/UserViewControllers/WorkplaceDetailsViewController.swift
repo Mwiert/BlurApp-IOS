@@ -16,6 +16,8 @@ class WorkplaceDetailsViewController : UIViewController, MKMapViewDelegate,CLLoc
     
     @IBOutlet weak var workplaceMap: MKMapView!
     
+    @IBOutlet weak var DistanceLabel: UILabel!
+    
     var locationManager = CLLocationManager()
     
     var wpName  = ""
@@ -24,6 +26,8 @@ class WorkplaceDetailsViewController : UIViewController, MKMapViewDelegate,CLLoc
     var wpLongitude  = ""
     
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         
         locationManager.delegate = self
@@ -31,7 +35,10 @@ class WorkplaceDetailsViewController : UIViewController, MKMapViewDelegate,CLLoc
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
+        
+        
         let annotation = MKPointAnnotation()
         annotation.title = wpName
         let tempLat = wpLatitude.replacingOccurrences(of: ",", with: ".")
@@ -39,7 +46,7 @@ class WorkplaceDetailsViewController : UIViewController, MKMapViewDelegate,CLLoc
         
         let annotatonlatitude : Double = Double(tempLat)!
         let annotationlongitude: Double = Double(tempLong)!
-
+        
         
         let locations = CLLocationCoordinate2D(latitude: annotatonlatitude, longitude: annotationlongitude)
         annotation.coordinate = locations
@@ -49,6 +56,17 @@ class WorkplaceDetailsViewController : UIViewController, MKMapViewDelegate,CLLoc
         let region = MKCoordinateRegion(center: annotation.coordinate, span: span)
         workplaceMap?.setRegion(region, animated: true)
         
+        let userLocationCoords = userDefaultsOptions().getuserCoordinates()
+        
+        let latDouble = Double(userLocationCoords.latitude)
+        let longDouble = Double(userLocationCoords.longitude)
+        
+        let userLocation = CLLocation(latitude: latDouble!, longitude: longDouble!)
+        let specifiedPoint = CLLocation(latitude:annotatonlatitude, longitude: annotationlongitude)
+        
+
+        let distanceInMeters = userLocation.distance(from: specifiedPoint)
+        DistanceLabel.text! = String(format: "%.01f  metre uzakta!", distanceInMeters)
         workplaceNameLabel.text! = wpName
         workplaceKindLabel.text! = wpKindName
     }

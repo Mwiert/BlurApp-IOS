@@ -20,3 +20,4 @@ struct lats : Codable{
     let latitude : String
     let longitude : String
 }
+

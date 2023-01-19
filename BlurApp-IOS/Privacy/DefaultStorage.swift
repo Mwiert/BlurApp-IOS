@@ -62,5 +62,21 @@ public class userDefaultsOptions{
         return userAdress as! String
         
     }
-    
+    func saveUsersLocationCoordinates(coordinates : lats){
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(coordinates) {
+            UserDefaults.standard.set(encoded, forKey: "userCoordinates")
+        }
+    }
+    func getuserCoordinates() -> lats{
+        let tempData = lats(latitude: "0.0", longitude: "0.0")
+        if let coordinates = UserDefaults.standard.object(forKey: "userCoordinates") as? Data  {
+            let decoder = JSONDecoder()
+            let loadedInfo = try? decoder.decode(lats.self, from: coordinates)
+            return loadedInfo!
+        }
+        else{
+            return tempData
+        }
+    }
 }
