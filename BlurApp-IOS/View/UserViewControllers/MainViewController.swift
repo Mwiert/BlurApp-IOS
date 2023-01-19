@@ -29,9 +29,19 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
         locationManager.startUpdatingLocation()
         
         
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedWorkplace = dataStorage().getWorkplaces()[indexPath.item]
         
+        let workplaceDetailsVC = storyboard?.instantiateViewController(withIdentifier: "WorkplaceDetailsViewController") as! WorkplaceDetailsViewController
+        workplaceDetailsVC.wpName = selectedWorkplace.name
+        workplaceDetailsVC.wpKindName = selectedWorkplace.professionName
+        workplaceDetailsVC.wpLatitude = selectedWorkplace.location.latitude
+        workplaceDetailsVC.wpLongitude = selectedWorkplace.location.longitude
+        navigationController?.present(workplaceDetailsVC, animated: true)
 
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         workplacesColletionView.dataSource = self
         workplacesColletionView.delegate = self
@@ -56,6 +66,8 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
             }
         }
     }
+    
+
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
@@ -90,7 +102,8 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
 }
 
 
-extension MainViewController : UICollectionViewDataSource{
+extension MainViewController : UICollectionViewDataSource,UICollectionViewDelegate{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let myData = dataStorage().getWorkplaces()
         return myData.count
@@ -109,4 +122,6 @@ extension MainViewController : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         return CGSize(width: 385, height: 75)
     }
+    
 }
+

@@ -17,8 +17,8 @@
 		DB77984F2978660E00701833 /* UserWorkplaceRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77984E2978660E00701833 /* UserWorkplaceRequestViewController.swift */; };
 		DB7798512978685700701833 /* AdminProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7798502978685700701833 /* AdminProfileViewController.swift */; };
 		DB77985329786DF200701833 /* ProfessionListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77985229786DF200701833 /* ProfessionListCollectionViewCell.swift */; };
+		DB77985729789A7200701833 /* WorkplaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77985629789A7200701833 /* WorkplaceDetailsViewController.swift */; };
 		DB795F132970B5DF00A909B6 /* CreateProfessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */; };
-		DB795F152970B9ED00A909B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB795F142970B9ED00A909B6 /* ViewController.swift */; };
 		DB8AC11D295D236900AEB617 /* Workplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC11C295D236900AEB617 /* Workplace.swift */; };
 		DB8AC121295D241000AEB617 /* BlurApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AC120295D241000AEB617 /* BlurApiService.swift */; };
 		DB980545297789270072AFF0 /* workplacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB980544297789270072AFF0 /* workplacesCollectionViewCell.swift */; };
@@ -82,8 +82,8 @@
 		DB77984E2978660E00701833 /* UserWorkplaceRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWorkplaceRequestViewController.swift; sourceTree = "<group>"; };
 		DB7798502978685700701833 /* AdminProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileViewController.swift; sourceTree = "<group>"; };
 		DB77985229786DF200701833 /* ProfessionListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionListCollectionViewCell.swift; sourceTree = "<group>"; };
+		DB77985629789A7200701833 /* WorkplaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkplaceDetailsViewController.swift; sourceTree = "<group>"; };
 		DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfessionViewController.swift; sourceTree = "<group>"; };
-		DB795F142970B9ED00A909B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB8AC11C295D236900AEB617 /* Workplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workplace.swift; sourceTree = "<group>"; };
 		DB8AC120295D241000AEB617 /* BlurApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurApiService.swift; sourceTree = "<group>"; };
 		DB980544297789270072AFF0 /* workplacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workplacesCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -168,6 +168,28 @@
 				DB9805462977956D0072AFF0 /* dataStorage.swift */,
 			);
 			path = Privacy;
+			sourceTree = "<group>";
+		};
+		DB7798542978998600701833 /* UserViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB77984E2978660E00701833 /* UserWorkplaceRequestViewController.swift */,
+				DBF5712C295A93E3009F2DA8 /* ProfileViewController.swift */,
+				DBF57128295A93D0009F2DA8 /* MainViewController.swift */,
+				DBF57124295A93B6009F2DA8 /* LocationMapViewController.swift */,
+				DB77985629789A7200701833 /* WorkplaceDetailsViewController.swift */,
+			);
+			path = UserViewControllers;
+			sourceTree = "<group>";
+		};
+		DB779855297899C900701833 /* AdminViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */,
+				DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */,
+				DB7798502978685700701833 /* AdminProfileViewController.swift */,
+			);
+			path = AdminViewControllers;
 			sourceTree = "<group>";
 		};
 		DBBC24DB295A9AD800CC6A7C /* Fonts */ = {
@@ -276,21 +298,15 @@
 		DBF57121295A9389009F2DA8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB779855297899C900701833 /* AdminViewControllers */,
+				DB7798542978998600701833 /* UserViewControllers */,
 				DB252D3C29763A7600A11E03 /* ViewComponents */,
-				DBF57124295A93B6009F2DA8 /* LocationMapViewController.swift */,
 				DBF57126295A93C8009F2DA8 /* LoginViewController.swift */,
-				DBF57128295A93D0009F2DA8 /* MainViewController.swift */,
 				DBF5712A295A93D8009F2DA8 /* OpeningViewController.swift */,
-				DBF5712C295A93E3009F2DA8 /* ProfileViewController.swift */,
 				DBF5712F295A93F6009F2DA8 /* RegisterViewController.swift */,
 				DBF57131295A9400009F2DA8 /* VerificationViewController.swift */,
-				DBB412C4296DC3AE00FD3D22 /* CreateWorkplaceViewController.swift */,
-				DB795F122970B5DF00A909B6 /* CreateProfessionViewController.swift */,
-				DB795F142970B9ED00A909B6 /* ViewController.swift */,
 				DB252D382975B29000A11E03 /* RouteToMainViewController.swift */,
 				DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */,
-				DB77984E2978660E00701833 /* UserWorkplaceRequestViewController.swift */,
-				DB7798502978685700701833 /* AdminProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -494,10 +510,10 @@
 				DBF57130295A93F6009F2DA8 /* RegisterViewController.swift in Sources */,
 				DBB412C3296DAB4100FD3D22 /* WorkplaceViewModel.swift in Sources */,
 				DB77985329786DF200701833 /* ProfessionListCollectionViewCell.swift in Sources */,
-				DB795F152970B9ED00A909B6 /* ViewController.swift in Sources */,
 				DBF57125295A93B6009F2DA8 /* LocationMapViewController.swift in Sources */,
 				DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */,
 				DBF570F5295A933D009F2DA8 /* BlurApp_IOS.xcdatamodeld in Sources */,
+				DB77985729789A7200701833 /* WorkplaceDetailsViewController.swift in Sources */,
 				DBF5712B295A93D8009F2DA8 /* OpeningViewController.swift in Sources */,
 				DBE84F87295E46AF00B1F26F /* RegisterViewModel.swift in Sources */,
 				DBE84F85295E469900B1F26F /* LoginViewModel.swift in Sources */,
