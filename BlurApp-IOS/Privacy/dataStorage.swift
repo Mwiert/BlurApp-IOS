@@ -22,7 +22,7 @@ public class dataStorage{
         let loadedInfo = try? decoder.decode([Workplace].self, from: mainWorkplaces!)
             return loadedInfo!
     }
-    func saveProfessions(professions : [professionInfo]){
+    func saveProfessions(professions : [professionInfo] ){
         let encoder = JSONEncoder()
         if let encoded = try? encoder.encode(professions) {
             UserDefaults.standard.set(encoded, forKey: "professions")

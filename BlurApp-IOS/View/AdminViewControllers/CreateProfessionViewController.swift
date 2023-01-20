@@ -28,9 +28,10 @@ class CreateProfessionViewController: UIViewController {
         }
     }
     
-    @IBAction func crprof(_ sender: Any) {
+    @IBAction func btnGetAllProfessions(_ sender: Any) {
         Task{
-            let res = try await WorkplaceVM().nearestWPs()
+            _ = try await WorkplaceVM().getAllProfessionsAsync()
         }
     }
+    
 }

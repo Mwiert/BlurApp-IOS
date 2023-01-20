@@ -104,116 +104,6 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TAd-bt-YFt">
-                                                        <rect key="frame" x="0.0" y="545" width="393" height="75"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="wEL-DE-cwD">
-                                                                <rect key="frame" x="0.0" y="0.0" width="1902" height="75"/>
-                                                                <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-tK-jwE">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="market"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQS-lR-0He">
-                                                                        <rect key="frame" x="106" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="berber"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-5b-hwJ">
-                                                                        <rect key="frame" x="212" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="terzi"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqL-NX-Jiv">
-                                                                        <rect key="frame" x="318" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="kuaför"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgv-c8-dtH">
-                                                                        <rect key="frame" x="424" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="züccaciye"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCf-0r-VAB">
-                                                                        <rect key="frame" x="530" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOp-JB-7Ka">
-                                                                        <rect key="frame" x="636" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHZ-sW-a42">
-                                                                        <rect key="frame" x="742" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAU-yv-3Nz">
-                                                                        <rect key="frame" x="848" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wM-qS-Vs7">
-                                                                        <rect key="frame" x="954" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eza-WI-1SY">
-                                                                        <rect key="frame" x="1060" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-AD-Qbn">
-                                                                        <rect key="frame" x="1166" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzF-h8-8re">
-                                                                        <rect key="frame" x="1272" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDa-L6-uIV">
-                                                                        <rect key="frame" x="1378" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAE-ZJ-Qz0">
-                                                                        <rect key="frame" x="1484" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSp-z6-CP3">
-                                                                        <rect key="frame" x="1590" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-oX-Fg4">
-                                                                        <rect key="frame" x="1696" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                                                    </button>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeU-1V-QpF">
-                                                                        <rect key="frame" x="1802" y="0.0" width="100" height="75"/>
-                                                                        <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="filled" title="son"/>
-                                                                    </button>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="wEL-DE-cwD" firstAttribute="trailing" secondItem="S6X-SL-qfE" secondAttribute="trailing" id="0eO-rt-WGB"/>
-                                                            <constraint firstItem="wEL-DE-cwD" firstAttribute="height" secondItem="Oa3-BL-AI2" secondAttribute="height" id="4oF-x3-U7A"/>
-                                                            <constraint firstItem="wEL-DE-cwD" firstAttribute="leading" secondItem="S6X-SL-qfE" secondAttribute="leading" id="eDX-Ga-rog"/>
-                                                            <constraint firstItem="wEL-DE-cwD" firstAttribute="bottom" secondItem="S6X-SL-qfE" secondAttribute="bottom" constant="75" id="o2k-JV-SdY"/>
-                                                            <constraint firstItem="wEL-DE-cwD" firstAttribute="top" secondItem="S6X-SL-qfE" secondAttribute="top" id="qdS-eW-R8t"/>
-                                                        </constraints>
-                                                        <viewLayoutGuide key="contentLayoutGuide" id="S6X-SL-qfE"/>
-                                                        <viewLayoutGuide key="frameLayoutGuide" id="Oa3-BL-AI2"/>
-                                                    </scrollView>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h6g-cG-2GT">
                                                         <rect key="frame" x="0.0" y="687" width="393" height="771"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -262,6 +152,46 @@
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RWr-AT-OFz">
+                                                        <rect key="frame" x="0.0" y="533" width="393" height="97"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tZl-Fx-wEQ">
+                                                            <size key="itemSize" width="62" height="76"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfessionListCollectionViewCell" id="2Wg-ot-udU" customClass="ProfessionListCollectionViewCell" customModule="BlurApp_IOS" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="10.666666666666666" width="62" height="76"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="llK-eF-ZkC">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="62" height="76"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEZ-og-wjC">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="62" height="15"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <color key="tintColor" white="1" alpha="0.94929245279999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="9"/>
+                                                                            <color key="textColor" white="1" alpha="0.94929245279999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapTemp" translatesAutoresizingMaskIntoConstraints="NO" id="6Vn-lh-iVB">
+                                                                            <rect key="frame" x="0.0" y="9" width="62" height="59"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </collectionViewCellContentView>
+                                                                <size key="customSize" width="62" height="76"/>
+                                                                <connections>
+                                                                    <outlet property="professionİmage" destination="6Vn-lh-iVB" id="zdw-eC-3ME"/>
+                                                                    <outlet property="professionName" destination="cEZ-og-wjC" id="Pcx-z5-jQV"/>
+                                                                </connections>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                    </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.33725491169999999" green="0.74117654560000001" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -299,13 +229,15 @@
                     <connections>
                         <outlet property="btnUserAdress" destination="u2F-vK-7fo" id="FU3-W9-LOe"/>
                         <outlet property="mapView" destination="qDr-IG-x5B" id="urb-s7-eeV"/>
+                        <outlet property="professionsCollectionView" destination="RWr-AT-OFz" id="bAa-ZV-weI"/>
                         <outlet property="workplacesColletionView" destination="h6g-cG-2GT" id="AO3-UP-gwA"/>
                         <segue destination="eX8-Z2-ZqO" kind="showDetail" id="06N-Pb-AzT"/>
+                        <segue destination="zKx-8S-edv" kind="presentation" id="Ka2-yb-p4N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmd-JC-37H" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7309.160305343511" y="-275.35211267605638"/>
+            <point key="canvasLocation" x="7311" y="-294"/>
         </scene>
         <!--Workplace Details View Controller-->
         <scene sceneID="AAp-Tb-jsX">
@@ -416,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zh3-Vr-vUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8327.480916030534" y="-275.35211267605638"/>
+            <point key="canvasLocation" x="8418" y="271"/>
         </scene>
         <!--Location Map View Controller-->
         <scene sceneID="lMc-ei-GIQ">
@@ -1793,7 +1725,7 @@
                                             <color key="baseBackgroundColor" red="0.36078432199999999" green="0.72941178080000002" blue="0.60392159219999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="crprof:" destination="Nqg-Zc-XVG" eventType="touchUpInside" id="TtU-kJ-zZF"/>
+                                            <action selector="btnGetAllProfessions:" destination="Nqg-Zc-XVG" eventType="touchUpInside" id="PMh-uv-exB"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -2079,6 +2011,100 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uhI-Lq-9iV" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8383.9694656488555" y="1131.6901408450706"/>
+        </scene>
+        <!--Chosen Profession List View Controller-->
+        <scene sceneID="8lt-Hy-vRW">
+            <objects>
+                <viewController storyboardIdentifier="ChosenProfessionListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zKx-8S-edv" customClass="ChosenProfessionListViewController" customModule="BlurApp_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cs-cJ-LsW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0g-SD-D75">
+                                <rect key="frame" x="91" y="-12" width="210" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendExa-ExtraBold" family="Lexend Exa" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3f-0Y-np2">
+                                <rect key="frame" x="0.0" y="68" width="393" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seçilen Meslek Adı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igt-Tg-Ujh">
+                                <rect key="frame" x="20" y="77" width="352" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZW-zf-83i">
+                                <rect key="frame" x="0.0" y="130" width="393" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Frg-aG-BoB">
+                                <rect key="frame" x="0.0" y="139" width="393" height="644"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DKL-1o-Fvu">
+                                    <size key="itemSize" width="389" height="75"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="workplacesCollectionbyProfessionViewCell" id="Vvx-gR-Nts" customClass="workplacesCollectionViewCell" customModule="BlurApp_IOS" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="389" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="P8C-Sl-IpM">
+                                            <rect key="frame" x="0.0" y="0.0" width="389" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uzaklık" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTO-BA-Wvz">
+                                                    <rect key="frame" x="228" y="27" width="153" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="LexendDeca-Regular" family="Lexend Deca" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapTemp" translatesAutoresizingMaskIntoConstraints="NO" id="Ixb-wK-Tzn">
+                                                    <rect key="frame" x="2" y="5" width="79" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxz-4c-b5K">
+                                                    <rect key="frame" x="89" y="8" width="113" height="59"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="LexendDeca-Bold" family="Lexend Deca" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.33725491169999999" green="0.74117654560000001" blue="0.59607845540000004" alpha="0.40394064470000002" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <size key="customSize" width="389" height="75"/>
+                                        <connections>
+                                            <outlet property="distanceLabel" destination="iTO-BA-Wvz" id="5fZ-lr-LC5"/>
+                                            <outlet property="workplacesImage" destination="Ixb-wK-Tzn" id="n3o-mv-nq9"/>
+                                            <outlet property="workplacesNameLabel" destination="Nxz-4c-b5K" id="zTD-Dj-XdU"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s4D-cL-Uh7"/>
+                        <color key="backgroundColor" red="0.33725491169999999" green="0.74117654560000001" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XKw-Va-205"/>
+                    <connections>
+                        <outlet property="professionName" destination="igt-Tg-Ujh" id="PkR-4e-hiK"/>
+                        <outlet property="workplacesColletionView" destination="Frg-aG-BoB" id="V2W-wK-xlr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIm-Qr-Uam" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8417.5572519083962" y="-468.3098591549296"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

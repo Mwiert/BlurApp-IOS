@@ -22,6 +22,9 @@ class AdminProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         getUserInfo()
+        Task{
+            _ = try await WorkplaceVM().getAllProfessionsAsync()
+        }
     }
     
     func getUserInfo(){

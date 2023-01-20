@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB252D392975B29000A11E03 /* RouteToMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB252D382975B29000A11E03 /* RouteToMainViewController.swift */; };
 		DB252D3B2975BBD300A11E03 /* RouteRegisterToMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */; };
+		DB26974D297A8DFB0011BB5A /* ChosenProfessionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB26974C297A8DFB0011BB5A /* ChosenProfessionListViewController.swift */; };
 		DB284F5029714DF200E3141E /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB284F4F29714DF200E3141E /* Coordinates.swift */; };
 		DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55359E296F7B7900F9C149 /* getWorkplaces.swift */; };
 		DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB648CED296619AA0010C54D /* DefaultStorage.swift */; };
@@ -76,6 +77,7 @@
 /* Begin PBXFileReference section */
 		DB252D382975B29000A11E03 /* RouteToMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToMainViewController.swift; sourceTree = "<group>"; };
 		DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRegisterToMainViewController.swift; sourceTree = "<group>"; };
+		DB26974C297A8DFB0011BB5A /* ChosenProfessionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenProfessionListViewController.swift; sourceTree = "<group>"; };
 		DB284F4F29714DF200E3141E /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		DB55359E296F7B7900F9C149 /* getWorkplaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getWorkplaces.swift; sourceTree = "<group>"; };
 		DB648CED296619AA0010C54D /* DefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStorage.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				DBF57128295A93D0009F2DA8 /* MainViewController.swift */,
 				DBF57124295A93B6009F2DA8 /* LocationMapViewController.swift */,
 				DB77985629789A7200701833 /* WorkplaceDetailsViewController.swift */,
+				DB26974C297A8DFB0011BB5A /* ChosenProfessionListViewController.swift */,
 			);
 			path = UserViewControllers;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				DBF57129295A93D0009F2DA8 /* MainViewController.swift in Sources */,
 				DBE84F89295E46BA00B1F26F /* VerificationViewModel.swift in Sources */,
 				DBF57127295A93C8009F2DA8 /* LoginViewController.swift in Sources */,
+				DB26974D297A8DFB0011BB5A /* ChosenProfessionListViewController.swift in Sources */,
 				DB252D3B2975BBD300A11E03 /* RouteRegisterToMainViewController.swift in Sources */,
 				DB55359F296F7B7900F9C149 /* getWorkplaces.swift in Sources */,
 				DB648CEE296619AA0010C54D /* DefaultStorage.swift in Sources */,

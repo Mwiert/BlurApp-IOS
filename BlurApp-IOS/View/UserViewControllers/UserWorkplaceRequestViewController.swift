@@ -17,6 +17,7 @@ class UserWorkplaceRequestViewController: UIViewController,MKMapViewDelegate,CLL
     
     @IBOutlet weak var professionLongitudeText: UITextField!
     
+    var professionPickerView = UIPickerView()
     
     @IBOutlet weak var professionCreatedLocation: MKMapView!
     let locationManager = CLLocationManager()
@@ -28,6 +29,12 @@ class UserWorkplaceRequestViewController: UIViewController,MKMapViewDelegate,CLL
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        professionPickerView.delegate = self
+        professionPickerView.dataSource = self
+        
+        professionKindNameText.inputView = professionPickerView
+        professionKindNameText.textAlignment = .center
         
         let gestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(chooseLocation(gestureRecognizer:)))
         gestureRecognizer.minimumPressDuration = 1.5
@@ -74,5 +81,26 @@ class UserWorkplaceRequestViewController: UIViewController,MKMapViewDelegate,CLL
             // create yerine sendAddRequest gelicek
            // WorkplaceVM().createNewWorkplace(createNewWorkplace: createNewWP)
         }
+    }
+}
+extension UserWorkplaceRequestViewController : UIPickerViewDelegate,UIPickerViewDataSource{
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        let data = dataStorage().getProfessions()
+        let dataCount = data.count
+        return dataCount
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let data = dataStorage().getProfessions()
+        return data[row].nameOfProfession
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let data = dataStorage().getProfessions()
+        professionKindNameText.text = data[row].nameOfProfession
+        professionKindNameText.resignFirstResponder()
     }
 }

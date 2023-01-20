@@ -8,7 +8,6 @@
 import UIKit
 import MapKit
 import CoreLocation
-import UIKit
 
 class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate{
 
@@ -17,6 +16,7 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
     
     @IBOutlet weak var workplacesColletionView: UICollectionView!
     
+    @IBOutlet weak var professionsCollectionView: UICollectionView!
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -30,17 +30,30 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
+        professionsCollectionView.dataSource = self
+        professionsCollectionView.delegate = self
         
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let selectedWorkplace = dataStorage().getWorkplaces()[indexPath.item]
-        
-        let workplaceDetailsVC = storyboard?.instantiateViewController(withIdentifier: "WorkplaceDetailsViewController") as! WorkplaceDetailsViewController
-        workplaceDetailsVC.wpName = selectedWorkplace.name
-        workplaceDetailsVC.wpKindName = selectedWorkplace.professionName
-        workplaceDetailsVC.wpLatitude = selectedWorkplace.location.latitude
-        workplaceDetailsVC.wpLongitude = selectedWorkplace.location.longitude
-        navigationController?.present(workplaceDetailsVC, animated: true)
+        if collectionView == workplacesColletionView{
+            
+            let selectedWorkplace = dataStorage().getWorkplaces()[indexPath.item]
+            
+            let workplaceDetailsVC = storyboard?.instantiateViewController(withIdentifier: "WorkplaceDetailsViewController") as! WorkplaceDetailsViewController
+            workplaceDetailsVC.wpName = selectedWorkplace.name
+            workplaceDetailsVC.wpKindName = selectedWorkplace.professionName
+            workplaceDetailsVC.wpLatitude = selectedWorkplace.location.latitude
+            workplaceDetailsVC.wpLongitude = selectedWorkplace.location.longitude
+            navigationController?.present(workplaceDetailsVC, animated: true)
+        }
+        else{
+            let selectedWorkplace = dataStorage().getProfessions()[indexPath.item]
+            
+            let workplaceDetailsVC = storyboard?.instantiateViewController(withIdentifier: "ChosenProfessionListViewController") as! ChosenProfessionListViewController
+            workplaceDetailsVC.professionNames = selectedWorkplace.nameOfProfession
+
+            navigationController?.present(workplaceDetailsVC, animated: true)
+        }
 
     }
     
@@ -113,41 +126,62 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
 extension MainViewController : UICollectionViewDataSource,UICollectionViewDelegate{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let myData = dataStorage().getWorkplaces()
-        return myData.count
+        if collectionView == workplacesColletionView{
+            let myData = dataStorage().getWorkplaces()
+            return myData.count
+        }
+        else{
+            let myData = dataStorage().getProfessions()
+            return myData.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let workplaceCell = collectionView.dequeueReusableCell(withReuseIdentifier: "workplacesCollectionViewCell", for: indexPath) as! workplacesCollectionViewCell
-        let myData = dataStorage().getWorkplaces()
-        workplaceCell.setup(with: myData[indexPath.row])
         
-        let userLocationCoords = userDefaultsOptions().getuserCoordinates()
-        
-        let latDouble = Double(userLocationCoords.latitude)
-        let longDouble = Double(userLocationCoords.longitude)
-        
-        let userLocationLat = myData[indexPath.item].location.latitude
-        let userLocationLong = myData[indexPath.item].location.longitude
-        
-        let useUserLatitude = Double(userLocationLat.replacingOccurrences(of: ",", with: "."))
-        let useUserLongitude = Double(userLocationLong.replacingOccurrences(of: ",", with: "."))
-        
-        let userLocation = CLLocation(latitude: latDouble!, longitude: longDouble!)
-        let specifiedPoint = CLLocation(latitude: useUserLatitude!, longitude: useUserLongitude!)
-        
+        if collectionView == self.workplacesColletionView{
+            let workplaceCell = collectionView.dequeueReusableCell(withReuseIdentifier: "workplacesCollectionViewCell", for: indexPath) as! workplacesCollectionViewCell
+            let myData = dataStorage().getWorkplaces()
+            workplaceCell.setup(with: myData[indexPath.row])
+            
+            let userLocationCoords = userDefaultsOptions().getuserCoordinates()
+            
+            let latDouble = Double(userLocationCoords.latitude)
+            let longDouble = Double(userLocationCoords.longitude)
+            
+            let userLocationLat = myData[indexPath.item].location.latitude
+            let userLocationLong = myData[indexPath.item].location.longitude
+            
+            let useUserLatitude = Double(userLocationLat.replacingOccurrences(of: ",", with: "."))
+            let useUserLongitude = Double(userLocationLong.replacingOccurrences(of: ",", with: "."))
+            
+            let userLocation = CLLocation(latitude: latDouble!, longitude: longDouble!)
+            let specifiedPoint = CLLocation(latitude: useUserLatitude!, longitude: useUserLongitude!)
+            
 
-        let distanceInMeters = userLocation.distance(from: specifiedPoint)
-        
-        workplaceCell.distanceLabel.text! = String(format: "%.01f  metre uzakta!", distanceInMeters)
-        
-        return workplaceCell
+            let distanceInMeters = userLocation.distance(from: specifiedPoint)
+            
+            workplaceCell.distanceLabel.text! = String(format: "%.01f  metre uzakta!", distanceInMeters)
+            
+            return workplaceCell
+        }
+        else{
+            let profCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProfessionListCollectionViewCell", for: indexPath) as! ProfessionListCollectionViewCell
+            let myData = dataStorage().getProfessions()
+            profCell.setup(with: myData[indexPath.row])
+            
+            return profCell
+        }
     }
 }
 extension MainViewController : UICollectionViewDelegateFlowLayout{
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        return CGSize(width: 385, height: 75)
+        if collectionView == workplacesColletionView{
+            return CGSize(width: 385, height: 75)
+        }
+        else{
+            return CGSize(width: 62, height: 76)
+        }
     }
     
 }

@@ -59,13 +59,14 @@ class LocationMapViewController: UIViewController, MKMapViewDelegate,CLLocationM
         mapView?.setRegion(region, animated: true)
     }
 }
+//YAPILDI
 extension LocationMapViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let myData = dataStorage().getProfessions()
         return myData.count
     }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    // YAPILDI
+    func collectionView(_ collectionView:   UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let profCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProfessionListCollectionViewCell", for: indexPath) as! ProfessionListCollectionViewCell
         let myData = dataStorage().getProfessions()
         profCell.setup(with: myData[indexPath.row])
@@ -73,6 +74,7 @@ extension LocationMapViewController : UICollectionViewDataSource{
         return profCell
     }
 }
+//YAPILDI
 extension LocationMapViewController : UICollectionViewDelegateFlowLayout{
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{

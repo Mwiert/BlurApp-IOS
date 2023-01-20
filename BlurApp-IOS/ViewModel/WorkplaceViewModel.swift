@@ -55,7 +55,9 @@ public class WorkplaceVM{
         
         switch await request.response.result {
                   case .success(let data):
+            dataStorage().saveProfessions(professions: data)
                       return data
+
                   case .failure(let error):
                       print(error.localizedDescription)
             return returnFail
