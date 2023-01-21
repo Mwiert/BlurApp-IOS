@@ -193,7 +193,6 @@
                                                         <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                                         <connections>
                                                             <action selector="searchText:" destination="cMM-ky-een" eventType="primaryActionTriggered" id="3Br-hj-8QH"/>
-                                                            <segue destination="kMs-eK-pAK" kind="presentation" identifier="searchWorkplaces" id="5jI-r9-nte"/>
                                                         </connections>
                                                     </textField>
                                                 </subviews>
@@ -237,6 +236,7 @@
                         <outlet property="workplacesColletionView" destination="h6g-cG-2GT" id="AO3-UP-gwA"/>
                         <segue destination="eX8-Z2-ZqO" kind="showDetail" id="06N-Pb-AzT"/>
                         <segue destination="zKx-8S-edv" kind="presentation" modalPresentationStyle="fullScreen" id="Ka2-yb-p4N"/>
+                        <segue destination="kMs-eK-pAK" kind="presentation" identifier="searchWorkplaces" id="iw0-8j-6P4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vmd-JC-37H" sceneMemberID="firstResponder"/>

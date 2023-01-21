@@ -44,9 +44,12 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
     }
     
     @IBAction func searchText(_ sender: UITextField) {
-        let search = sender.text?.lowercased()
-        searchText = search!
-        performSegue(withIdentifier: "searchWorkplaces", sender: nil)
+        if(sender.text!.isEmpty == false){
+            let search = sender.text?.lowercased()
+            searchText = search!
+            performSegue(withIdentifier: "searchWorkplaces", sender: nil)
+            sender.text = .none
+        }
     }
     
     
