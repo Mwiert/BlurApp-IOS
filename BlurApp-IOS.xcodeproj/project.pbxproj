@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1F523D297BF3A50006B302 /* FilteredWorkplaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F523C297BF3A50006B302 /* FilteredWorkplaceDetailsViewController.swift */; };
+		DB1F523F297C14AC0006B302 /* SearchWorkplaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F523E297C14AC0006B302 /* SearchWorkplaceViewController.swift */; };
+		DB1F5241297C248F0006B302 /* SearchedWorkplaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F5240297C248F0006B302 /* SearchedWorkplaceDetailsViewController.swift */; };
 		DB252D392975B29000A11E03 /* RouteToMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB252D382975B29000A11E03 /* RouteToMainViewController.swift */; };
 		DB252D3B2975BBD300A11E03 /* RouteRegisterToMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */; };
 		DB26974D297A8DFB0011BB5A /* ChosenProfessionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB26974C297A8DFB0011BB5A /* ChosenProfessionListViewController.swift */; };
@@ -75,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB1F523C297BF3A50006B302 /* FilteredWorkplaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredWorkplaceDetailsViewController.swift; sourceTree = "<group>"; };
+		DB1F523E297C14AC0006B302 /* SearchWorkplaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWorkplaceViewController.swift; sourceTree = "<group>"; };
+		DB1F5240297C248F0006B302 /* SearchedWorkplaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedWorkplaceDetailsViewController.swift; sourceTree = "<group>"; };
 		DB252D382975B29000A11E03 /* RouteToMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToMainViewController.swift; sourceTree = "<group>"; };
 		DB252D3A2975BBD300A11E03 /* RouteRegisterToMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRegisterToMainViewController.swift; sourceTree = "<group>"; };
 		DB26974C297A8DFB0011BB5A /* ChosenProfessionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenProfessionListViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +187,9 @@
 				DBF57124295A93B6009F2DA8 /* LocationMapViewController.swift */,
 				DB77985629789A7200701833 /* WorkplaceDetailsViewController.swift */,
 				DB26974C297A8DFB0011BB5A /* ChosenProfessionListViewController.swift */,
+				DB1F523C297BF3A50006B302 /* FilteredWorkplaceDetailsViewController.swift */,
+				DB1F523E297C14AC0006B302 /* SearchWorkplaceViewController.swift */,
+				DB1F5240297C248F0006B302 /* SearchedWorkplaceDetailsViewController.swift */,
 			);
 			path = UserViewControllers;
 			sourceTree = "<group>";
@@ -515,12 +524,15 @@
 				DB77985329786DF200701833 /* ProfessionListCollectionViewCell.swift in Sources */,
 				DBF57125295A93B6009F2DA8 /* LocationMapViewController.swift in Sources */,
 				DBF57132295A9400009F2DA8 /* VerificationViewController.swift in Sources */,
+				DB1F523F297C14AC0006B302 /* SearchWorkplaceViewController.swift in Sources */,
 				DBF570F5295A933D009F2DA8 /* BlurApp_IOS.xcdatamodeld in Sources */,
 				DB77985729789A7200701833 /* WorkplaceDetailsViewController.swift in Sources */,
 				DBF5712B295A93D8009F2DA8 /* OpeningViewController.swift in Sources */,
 				DBE84F87295E46AF00B1F26F /* RegisterViewModel.swift in Sources */,
+				DB1F523D297BF3A50006B302 /* FilteredWorkplaceDetailsViewController.swift in Sources */,
 				DBE84F85295E469900B1F26F /* LoginViewModel.swift in Sources */,
 				DBF570EB295A933D009F2DA8 /* AppDelegate.swift in Sources */,
+				DB1F5241297C248F0006B302 /* SearchedWorkplaceDetailsViewController.swift in Sources */,
 				DBF57129295A93D0009F2DA8 /* MainViewController.swift in Sources */,
 				DBE84F89295E46BA00B1F26F /* VerificationViewModel.swift in Sources */,
 				DBF57127295A93C8009F2DA8 /* LoginViewController.swift in Sources */,

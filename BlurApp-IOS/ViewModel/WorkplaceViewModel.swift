@@ -13,6 +13,30 @@ import Alamofire
 
 public class WorkplaceVM{
     
+    func searchSelectedWorkplacesByProfesionName(professionName : String, WorkplaceData : [Workplace]) -> [Workplace]{
+        
+        var tempData: [Workplace] = []
+        
+        for myData in WorkplaceData{
+            if(myData.professionName == professionName){
+                tempData.append(myData)
+            }
+        }
+        return tempData
+    }
+    
+    func searchSelectedWorkplacesByProfesionNameAndName(professionName : String , profName : String, WorkplaceData : [Workplace]) -> [Workplace]{
+        
+        var tempData: [Workplace] = []
+        
+        for myData in WorkplaceData{
+            if(myData.professionName == professionName && myData.name == profName){
+                tempData.append(myData)
+            }
+        }
+        return tempData
+    }
+    
     func nearestWPs()async throws{
         let myData = CoordinatesStruct(topLeft: lats.init(latitude: "20,23423", longitude: "100,124"), bottomRight: lats.init(latitude: "50,234234", longitude: "40,23423"))
         

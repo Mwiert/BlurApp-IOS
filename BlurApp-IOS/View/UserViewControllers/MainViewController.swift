@@ -20,6 +20,7 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
     
     @IBOutlet weak var mapView: MKMapView!
     
+    var searchText = ""
     var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -34,6 +35,21 @@ class MainViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDe
         professionsCollectionView.delegate = self
         
     }
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "searchWorkplaces"{
+            let destinationVC = segue.destination as! SearchWorkplaceViewController
+            destinationVC.search = searchText
+        }
+    }
+    
+    @IBAction func searchText(_ sender: UITextField) {
+        let search = sender.text?.lowercased()
+        searchText = search!
+        performSegue(withIdentifier: "searchWorkplaces", sender: nil)
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == workplacesColletionView{
             
