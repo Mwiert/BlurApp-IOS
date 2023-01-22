@@ -25,12 +25,10 @@ class CreateProfessionViewController: UIViewController {
         }
         else{
             WorkplaceVM().createSingleProfession(professionName: professionNameText.text!)
-        }
-    }
-    
-    @IBAction func btnGetAllProfessions(_ sender: Any) {
-        Task{
-            _ = try await WorkplaceVM().getAllProfessionsAsync()
+            let alert = UIAlertController(title: "Başarılı!", message: "İş yeri oluşturuldu.", preferredStyle:UIAlertController.Style.alert)
+            self.present(alert, animated: true, completion: nil)
+            let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default)
+            alert.addAction(okButton)
         }
     }
     

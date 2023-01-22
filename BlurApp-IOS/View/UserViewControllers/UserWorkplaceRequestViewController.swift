@@ -77,6 +77,10 @@ class UserWorkplaceRequestViewController: UIViewController,MKMapViewDelegate,CLL
             alert.addAction(okButton)
         }
         else{
+            let alert = UIAlertController(title: "Başarılı!", message: "İş yeri konumu talebiniz iletildi.", preferredStyle:UIAlertController.Style.alert)
+            self.present(alert, animated: true, completion: nil)
+            let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default)
+            alert.addAction(okButton)
             let createNewWP = createWorkplace.init(name: professionNameText.text!, latitude: professionLatitudeText.text!, longitude: professionLongitudeText.text!, professionName: professionKindNameText.text!)
             // create yerine sendAddRequest gelicek
            // WorkplaceVM().createNewWorkplace(createNewWorkplace: createNewWP)

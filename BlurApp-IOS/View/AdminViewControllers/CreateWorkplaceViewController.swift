@@ -83,6 +83,10 @@ class CreateWorkplaceViewController: UIViewController, MKMapViewDelegate, CLLoca
             let createNewWP = createWorkplace.init(name: professionNameText.text!, latitude: professionLatitudeText.text!, longitude: professionLongitudeText.text!, professionName: professionKindNameText.text!)
             
             WorkplaceVM().createNewWorkplace(createNewWorkplace: createNewWP)
+            let alert = UIAlertController(title: "Başarılı!", message: "İş yeri oluşturuldu.", preferredStyle:UIAlertController.Style.alert)
+            self.present(alert, animated: true, completion: nil)
+            let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default)
+            alert.addAction(okButton)
         }
     }
 }

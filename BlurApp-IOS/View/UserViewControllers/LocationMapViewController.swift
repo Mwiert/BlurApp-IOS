@@ -62,21 +62,30 @@ class LocationMapViewController: UIViewController, MKMapViewDelegate,CLLocationM
                 WorkplaceVM().getWorkplaces1 { locationWps in
                     
                    let searchedData = WorkplaceVM().searchSelectedWorkplacesByProfesionName(professionName: profName, WorkplaceData: locationWps)
-                    for wpLocations in searchedData{
-                        let annotation = MKPointAnnotation()
-                        annotation.title = wpLocations.name
-                        
-                        let tempLat = wpLocations.location.latitude.replacingOccurrences(of: ",", with: ".")
-                        let tempLong = wpLocations.location.longitude.replacingOccurrences(of: ",", with: ".")
-                        
-                        let annotatonlatitude : Double = Double(tempLat)!
-                        let annotationlongitude: Double = Double(tempLong)!
-
-                        
-                        let locations = CLLocationCoordinate2D(latitude: annotatonlatitude, longitude: annotationlongitude)
-                        annotation.coordinate = locations
-                        self.mapView.addAnnotation(annotation)
-                }
+                    if(searchedData.count == 0){
+                        let alert = UIAlertController(title: "Uyarı!", message: "İş yeri bulunamadı.", preferredStyle:UIAlertController.Style.alert)
+                        self.present(alert, animated: true, completion: nil)
+                        let okButton = UIAlertAction(title: "Tamam", style: UIAlertAction.Style.default)
+                        alert.addAction(okButton)
+                    }
+                    else{
+                        for wpLocations in searchedData{
+                            let annotation = MKPointAnnotation()
+                            annotation.title = wpLocations.name
+                            
+                            let tempLat = wpLocations.location.latitude.replacingOccurrences(of: ",", with: ".")
+                            let tempLong = wpLocations.location.longitude.replacingOccurrences(of: ",", with: ".")
+                            
+                            let annotatonlatitude : Double = Double(tempLat)!
+                            let annotationlongitude: Double = Double(tempLong)!
+                            
+                            
+                            let locations = CLLocationCoordinate2D(latitude: annotatonlatitude, longitude: annotationlongitude)
+                            annotation.coordinate = locations
+                            self.mapView.addAnnotation(annotation)
+                            self.mapView.setCenter(annotation.coordinate, animated: true)
+                        }
+                    }
             }
         
     }
