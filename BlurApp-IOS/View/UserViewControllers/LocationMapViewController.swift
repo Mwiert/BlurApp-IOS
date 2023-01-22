@@ -50,7 +50,37 @@ class LocationMapViewController: UIViewController, MKMapViewDelegate,CLLocationM
                 }
             }
         }
+        
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+            let allAnnotations = self.mapView.annotations
+            self.mapView.removeAnnotations(allAnnotations)
+                let myData = dataStorage().getProfessions()
+                let profName = myData[indexPath.row].nameOfProfession
+
+                WorkplaceVM().getWorkplaces1 { locationWps in
+                    
+                   let searchedData = WorkplaceVM().searchSelectedWorkplacesByProfesionName(professionName: profName, WorkplaceData: locationWps)
+                    for wpLocations in searchedData{
+                        let annotation = MKPointAnnotation()
+                        annotation.title = wpLocations.name
+                        
+                        let tempLat = wpLocations.location.latitude.replacingOccurrences(of: ",", with: ".")
+                        let tempLong = wpLocations.location.longitude.replacingOccurrences(of: ",", with: ".")
+                        
+                        let annotatonlatitude : Double = Double(tempLat)!
+                        let annotationlongitude: Double = Double(tempLong)!
+
+                        
+                        let locations = CLLocationCoordinate2D(latitude: annotatonlatitude, longitude: annotationlongitude)
+                        annotation.coordinate = locations
+                        self.mapView.addAnnotation(annotation)
+                }
+            }
+        
+    }
+    
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation = CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude)
         
