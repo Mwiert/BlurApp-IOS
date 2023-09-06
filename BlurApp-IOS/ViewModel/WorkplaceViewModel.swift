@@ -87,18 +87,22 @@ public class WorkplaceVM{
             return returnFail
                   }
               }
-    func getAllProfessions(){
-        
-        AF.request(reqUrl().getallProfessionsUrl, method: .get, headers: apiService().reqHeaders).responseDecodable(of: [professionInfo].self,completionHandler: { response in
+    func getAllProfessions(completion: @escaping (Bool) -> Void){
+       AF.request(reqUrl().getallProfessionsUrl, method: .get, headers: apiService().headerWithToken()).responseDecodable(of: [professionInfo].self,completionHandler: { response in
+            
+            if let statuscode = response.response?.statusCode{
+                print(statuscode)
+            }
+
                   switch response.result {
                   case .success(let data):
                       dataStorage().saveProfessions(professions: data)
-                      print(data)
+                      completion(true)
                   case .failure(_):
                       print(response.error?.localizedDescription)
+                      completion(false)
                   }
-              }
-        )
+              })
     }
     
     func createSingleProfession(professionName : String){
@@ -115,14 +119,53 @@ public class WorkplaceVM{
      }
     func getWorkplaces1(completion: @escaping ([Workplace]) -> Void) {
         AF.request(reqUrl().getallWorkplacesUrl, method: .get, headers: apiService().headerWithToken())
-            .responseDecodable(of: [Workplace].self) { response in
+            .responseDecodable(of: [Workplace2].self) { response in
                 switch response.result {
                     case .success(let data):
-                    dataStorage().saveWorkplaceList(workplaces: data)
-                        completion(data)
+                    
+                    var workplaceArray: [Workplace] = []
+
+                    for workplace in data {
+                         let latitudeNew = String(workplace.location.latitude!)
+                           let longitudeNew = String(workplace.location.longitude!)
+                            let workplace = Workplace(id: workplace.id, professionName: workplace.professionName, name: workplace.name, location: Location(latitude: latitudeNew, longitude: longitudeNew))
+                            workplaceArray.append(workplace)
+                        
+                    }
+                    dataStorage().saveWorkplaceList(workplaces: workplaceArray)
+                        completion(workplaceArray)
                     case .failure(let error):
                         print(error)
                         print(response.data)
+                }
+            }
+    }
+    
+    func getWorkplaces2(completion: @escaping (Bool) -> Void) {  // BOOL DÖNDÜREN
+        AF.request(reqUrl().getallWorkplacesUrl, method: .get, headers: apiService().headerWithToken())
+            .responseDecodable(of: [Workplace2].self) { response in
+                if let statuscode = response.response?.statusCode{
+                    print(statuscode)
+                }
+                
+                switch response.result {
+                    case .success(let data):
+                    
+                    var workplaceArray: [Workplace] = []
+
+                    for workplace in data {
+                         let latitudeNew = String(workplace.location.latitude!)
+                           let longitudeNew = String(workplace.location.longitude!)
+                            let workplace = Workplace(id: workplace.id, professionName: workplace.professionName, name: workplace.name, location: Location(latitude: latitudeNew, longitude: longitudeNew))
+                            workplaceArray.append(workplace)
+                        
+                    }
+                    dataStorage().saveWorkplaceList(workplaces: workplaceArray)
+                        completion(true)
+                    case .failure(let error):
+                        print(error)
+                        print(response.data)
+                    completion(false)
                 }
             }
     }

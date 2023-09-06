@@ -37,8 +37,8 @@ class LocationMapViewController: UIViewController, MKMapViewDelegate,CLLocationM
                     let annotation = MKPointAnnotation()
                     annotation.title = wpLocations.name
                     
-                    let tempLat = wpLocations.location.latitude.replacingOccurrences(of: ",", with: ".")
-                    let tempLong = wpLocations.location.longitude.replacingOccurrences(of: ",", with: ".")
+                    let tempLat = wpLocations.location.latitude
+                    let tempLong = wpLocations.location.longitude
                     
                     let annotatonlatitude : Double = Double(tempLat)!
                     let annotationlongitude: Double = Double(tempLong)!

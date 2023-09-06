@@ -8,19 +8,21 @@ import Foundation
 
 // MARK: - Welcome
 struct fullWorkplace: Codable {
-    let workplace: Workplace
+    let Workplace: Workplace
 }
 
 // MARK: - Workplace
 struct Workplace: Codable {
-    let id: ids
+    let id: ID
     let professionName, name: String
     let location: Location
+    
 }
 
 // MARK: - Location
 struct Location: Codable {
     let latitude, longitude: String
+    
 }
 
 struct createWorkplace : Codable{
@@ -30,4 +32,17 @@ struct createWorkplace : Codable{
     let professionName : String?
 }
 
+struct location2 : Codable {
+    let latitude  : Double?
+    let longitude : Double?
+
+
+}
+
+struct Workplace2: Codable {
+    let id: ID
+    let professionName, name: String
+    let location : location2
+
+}
 

@@ -32,7 +32,7 @@ class RouteRegisterToMainViewController: UIViewController {
                 self.performSegue(withIdentifier: "verificationSegue", sender: (Any).self)
             }
         }
-        WorkplaceVM().getAllProfessions()
+       // WorkplaceVM().getAllProfessions()
     }
     
 

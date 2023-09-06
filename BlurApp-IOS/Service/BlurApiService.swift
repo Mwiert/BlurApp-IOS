@@ -10,7 +10,11 @@ import Alamofire
 import SwiftyJSON
 
 public class apiService{
-     let apiURL : String = "http://localhost:5208/"
+    let apiURL : String = "http://localhost:5005/api/"  // 5208 idi
+    let apiUserUrl : String = "http://localhost:5084/api/"
+    let apiWpUrl : String = "http://localhost:5238/"
+    // /localhost:5005/api/Authentication/login
+    
     
     func headerWithToken() -> HTTPHeaders{
         let token = userDefaultsOptions().getUserInfo().token!
@@ -30,15 +34,16 @@ public class apiService{
 // genel AF fonksiyonu yazılabilir.
 
 }
+
 enum requestPaths : String {
-    case userLoginPath = "api/home/login/" // method : POST
-    case userRegisterPath = "api/home/createaccount/" // method POST
-    case createWorkplace = "api/admin/createworkplace/" // method POST
-    case getallWorkplaces = "api/user/getallworkplaces/" // method GET
-    case createProfession = "api/admin/createprofession/" // method POST
-    case createSingleProfession = "api/admin/createsingleprofession/" // method POST
-    case getallProfessions = "api/user/getallprofessions/" // method GET
-    case getnearestWorkPlaces = "api/user/getnearestworkplaces/" // method POST
+    case userLoginPath = "Authentication/login2" // method : POST
+    case userRegisterPath = "Authentication/createaccount/" // method POST
+    case createWorkplace = "admin/createworkplace/" // method POST
+    case getallWorkplaces = "user/getallworkplaces" // method GET
+    case createProfession = "admin/createprofession/" // method POST
+    case createSingleProfession = "admin/createsingleprofession/" // method POST
+    case getallProfessions = "user/getallprofessions" // method GET
+    case getnearestWorkPlaces = "user/getnearestworkplaces/" // method POST
 }
 
 struct reqUrl{
@@ -46,8 +51,8 @@ struct reqUrl{
     let registerUrl = apiService().apiURL + requestPaths.userRegisterPath.rawValue
     let createProfessionUrl = apiService().apiURL + requestPaths.createProfession.rawValue
     let createWorkplaceUrl = apiService().apiURL + requestPaths.createWorkplace.rawValue
-    let getallWorkplacesUrl = apiService().apiURL + requestPaths.getallWorkplaces.rawValue
+    let getallWorkplacesUrl = apiService().apiWpUrl + requestPaths.getallWorkplaces.rawValue
     let createSingleProfessionUrl = apiService().apiURL + requestPaths.createSingleProfession.rawValue
-    let getallProfessionsUrl = apiService().apiURL + requestPaths.getallProfessions.rawValue
+    let getallProfessionsUrl = apiService().apiWpUrl + requestPaths.getallProfessions.rawValue
     let getnearestWorkPlacesUrl = apiService().apiURL + requestPaths.getnearestWorkPlaces.rawValue
 }

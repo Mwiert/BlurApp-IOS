@@ -25,7 +25,7 @@ public class userDefaultsOptions{
     }
     
     func getUserInfo() -> userProps{
-        let user = userProps.init(id: .init(timestamp: 1, machine: 1, pid: 1, increment: 1, creationTime: ""), email: "not found", password: "", name: "", surname: "", token: "", tokenExpiresIn: "",userType: 3)
+        let user = userProps.init(id: "", email: "not found", password: "", name: "", surname: "", token: "", tokenExpiresIn: "",userType: 3)
         
         if let userInfo = UserDefaults.standard.object(forKey: "userInfo") as? Data  {
             let decoder = JSONDecoder()

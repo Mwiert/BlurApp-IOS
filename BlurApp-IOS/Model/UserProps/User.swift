@@ -12,7 +12,7 @@ struct mainUser : Codable{
 }
 
 struct userProps : Codable {
-    let id : ids
+    let id : String?//ids
     let email : String?
     let password : String?
     let name : String?
@@ -29,6 +29,7 @@ struct ids: Codable{
     let increment : Double?
     let creationTime : String?
 }
+
 
 
 struct userLogin : Codable{
